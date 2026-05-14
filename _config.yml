@@ -1,0 +1,10 @@
+title: Dalmend Home
+description: Premium home decor and interior design
+theme: minima
+baseurl: ""
+url: "https://articles.dalmend.com"
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+show_excerpts: true
+minima:
+  skin: dark
