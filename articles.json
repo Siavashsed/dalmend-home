@@ -10,5 +10,17 @@
     "outbound_links": [
       "nar.realtor"
     ]
+  },
+  {
+    "title": "The Renovation Projects That Actually Add Resale Value (And the Ones That Don't)",
+    "slug": "renovations-that-add-resale-value",
+    "meta_description": "Interior designer and property investor Olivia Grant breaks down which renovations add real resale value and which ones just drain your budget.",
+    "date": "May 15, 2026",
+    "date_iso": "2026-05-15",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/31913354/pexels-photo-31913354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "remodeling.hw.net"
+    ]
   }
 ]
