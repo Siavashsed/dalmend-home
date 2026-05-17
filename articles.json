@@ -22,5 +22,18 @@
     "outbound_links": [
       "remodeling.hw.net"
     ]
+  },
+  {
+    "title": "Open Floor Plans: The Downsides Nobody Mentions",
+    "slug": "open-floor-plans-downsides",
+    "meta_description": "Interior designer and property investor Olivia Grant reveals the real problems with open floor plans that buyers and renovators rarely hear about.",
+    "date": "May 17, 2026",
+    "date_iso": "2026-05-17",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/25568737/pexels-photo-25568737.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "acousticalsociety.org",
+      "nar.realtor"
+    ]
   }
 ]
