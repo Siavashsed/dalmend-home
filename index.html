@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Dalmend Home - Design, Staging and Interior Decisions That Pay Off</title>
-<meta name="description" content="Interior design advice that considers both aesthetics and financial return - from a designer who also flips properties. Renovation ROI, home staging, color theory and more.">
+<title>Dalmend Home - Luxury Interior Design for High-End Houses and Mansions</title>
+<meta name="description" content="Dalmend Home is a luxury interior design studio decorating high-end houses and mansions - statement rooms, rare materials, sculptural lighting and curated collections. Part of the Dalmend Collective.">
 <meta name="author" content="Olivia Grant">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,265 +12,327 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 :root{
-  --bg:#fefcf7;
-  --bg2:#f7f4ee;
-  --surface:#eeeae0;
-  --primary:#78716c;
-  --primary2:#57534e;
-  --accent:#c8a47e;
-  --accent2:#b8906a;
-  --text:#1c1814;
-  --muted:#8c8070;
-  --border:#ddd8cc;
+  --bg:#0c0b0a;
+  --bg2:#121110;
+  --surface:#1a1816;
+  --surface2:#221f1c;
+  --primary:#a89a86;
+  --primary2:#c9bca6;
+  --accent:#c9a55c;
+  --accent2:#e3c987;
+  --accent-deep:#9c7f3f;
+  --text:#f3efe7;
+  --text-dim:#cabfae;
+  --muted:#8a8073;
+  --border:#2a2724;
+  --border2:#36322d;
   --serif:'Cormorant Garamond',Georgia,serif;
   --sans:'Jost','Helvetica Neue',system-ui,sans-serif;
-  --shadow:0 1px 4px rgba(28,24,20,.07),0 1px 2px rgba(28,24,20,.05);
-  --shadow-md:0 4px 16px rgba(28,24,20,.10);
-  --shadow-lg:0 8px 32px rgba(28,24,20,.12);
+  --shadow:0 2px 10px rgba(0,0,0,.5);
+  --shadow-md:0 8px 30px rgba(0,0,0,.6);
+  --shadow-lg:0 20px 60px rgba(0,0,0,.7);
+  --gold-grad:linear-gradient(120deg,#9c7f3f 0%,#e3c987 45%,#c9a55c 70%,#8c7236 100%);
   --radius:4px;
 }
 body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15px;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
 button,input{font-family:var(--sans)}
+::selection{background:rgba(201,165,92,.3);color:var(--text)}
 
 /* ── NAV ── */
-.nav{background:var(--bg);position:sticky;top:0;z-index:200;transition:border-color .3s,box-shadow .3s}
-.nav.scrolled{border-bottom:1px solid var(--border);box-shadow:var(--shadow)}
-.nav-inner{max-width:1200px;margin:0 auto;padding:0 28px;display:flex;align-items:center;height:68px;gap:0}
-.nav-mark{display:flex;align-items:center;gap:12px;margin-right:auto;flex-shrink:0}
-.nav-dh{width:36px;height:36px;border-radius:50%;background:var(--primary2);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:15px;font-weight:600;color:var(--bg);letter-spacing:.5px;flex-shrink:0}
-.nav-name{font-family:var(--serif);font-size:20px;font-weight:500;color:var(--text);letter-spacing:.3px}
-.nav-links{display:flex;gap:0;height:100%;align-items:center}
-.nav-links a{font-size:13px;font-weight:400;letter-spacing:.8px;text-transform:uppercase;color:var(--muted);padding:0 18px;height:100%;display:flex;align-items:center;position:relative;transition:color .2s}
-.nav-links a::after{content:'';position:absolute;bottom:0;left:18px;right:18px;height:1px;background:var(--accent);transform:scaleX(0);transition:transform .25s}
+.nav{background:rgba(12,11,10,.78);backdrop-filter:blur(14px);position:sticky;top:0;z-index:200;transition:border-color .3s,box-shadow .3s,background .3s;border-bottom:1px solid transparent}
+.nav.scrolled{border-bottom:1px solid var(--border);box-shadow:var(--shadow);background:rgba(12,11,10,.94)}
+.nav-inner{max-width:1240px;margin:0 auto;padding:0 32px;display:flex;align-items:center;height:74px}
+.nav-mark{display:flex;align-items:center;gap:13px;margin-right:auto;flex-shrink:0}
+.nav-dh{width:38px;height:38px;border-radius:50%;background:var(--gold-grad);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:15px;font-weight:600;color:#171411;letter-spacing:.5px;flex-shrink:0}
+.nav-name{font-family:var(--serif);font-size:21px;font-weight:500;color:var(--text);letter-spacing:.4px}
+.nav-name span{color:var(--accent)}
+.nav-links{display:flex;height:100%;align-items:center}
+.nav-links a{font-size:12px;font-weight:400;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);padding:0 19px;height:100%;display:flex;align-items:center;position:relative;transition:color .2s}
+.nav-links a::after{content:'';position:absolute;bottom:24px;left:19px;right:19px;height:1px;background:var(--accent);transform:scaleX(0);transition:transform .3s}
 .nav-links a:hover{color:var(--text)}
 .nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1)}
-.nav-links a.active{color:var(--text)}
-.nav-cta{font-size:12px;font-weight:500;letter-spacing:.6px;text-transform:uppercase;color:var(--bg);background:var(--accent);padding:9px 22px;border-radius:2px;transition:background .2s;flex-shrink:0;margin-left:28px}
-.nav-cta:hover{background:var(--accent2)}
+.nav-links a.active{color:var(--accent2)}
+.nav-cta{font-size:11px;font-weight:500;letter-spacing:1.2px;text-transform:uppercase;color:#171411;background:var(--gold-grad);padding:11px 24px;border-radius:2px;transition:filter .2s,transform .2s;flex-shrink:0;margin-left:28px}
+.nav-cta:hover{filter:brightness(1.12);transform:translateY(-1px)}
 .nav-burger{display:none;flex-direction:column;gap:6px;cursor:pointer;padding:6px;background:none;border:none;margin-left:16px}
 .nav-burger span{width:24px;height:1.5px;background:var(--primary);border-radius:1px;display:block;transition:transform .25s,opacity .25s}
-.nav-mobile{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--border);flex-direction:column;z-index:199;box-shadow:var(--shadow-md)}
+.nav-mobile{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg2);border-bottom:1px solid var(--border);flex-direction:column;z-index:199;box-shadow:var(--shadow-md)}
 .nav-mobile.open{display:flex}
-.nav-mobile a{font-size:13px;font-weight:400;letter-spacing:.8px;text-transform:uppercase;color:var(--primary2);padding:16px 28px;border-bottom:1px solid var(--border);transition:color .2s,background .2s}
-.nav-mobile a:hover{color:var(--accent);background:var(--bg2)}
+.nav-mobile a{font-size:13px;font-weight:400;letter-spacing:1px;text-transform:uppercase;color:var(--text-dim);padding:17px 32px;border-bottom:1px solid var(--border);transition:color .2s,background .2s}
+.nav-mobile a:hover{color:var(--accent);background:var(--surface)}
 .nav-mobile a:last-child{border-bottom:none}
-@media(max-width:768px){.nav-links,.nav-cta{display:none}.nav-burger{display:flex}}
+@media(max-width:860px){.nav-links,.nav-cta{display:none}.nav-burger{display:flex}}
 
 /* ── HERO ── */
-.hero{background:var(--bg);padding:80px 28px 0;overflow:hidden;position:relative;min-height:640px}
-.hero::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent)}
-.hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 480px;gap:72px;align-items:center}
-.hero-content{padding-bottom:72px}
-.hero-kicker{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--accent2);margin-bottom:28px}
-.hero-kicker-line{width:28px;height:1px;background:var(--accent)}
-.hero-h1{font-family:var(--serif);font-size:clamp(44px,6vw,76px);font-weight:400;line-height:1.08;color:var(--text);margin-bottom:6px;letter-spacing:-.5px}
-.hero-h1 em{font-style:italic;color:var(--accent2)}
-.hero-h1-sub{font-family:var(--serif);font-size:clamp(32px,4vw,52px);font-weight:300;line-height:1.15;color:var(--primary);margin-bottom:28px;letter-spacing:-.2px}
-.hero-desc{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:36px;max-width:460px;font-weight:300}
+.hero{background:var(--bg);padding:96px 32px 104px;overflow:hidden;position:relative}
+.hero::before{content:'';position:absolute;top:-20%;right:-10%;width:60%;height:80%;background:radial-gradient(ellipse at center,rgba(201,165,92,.10) 0%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--border2),transparent)}
+.hero-inner{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 470px;gap:80px;align-items:center;position:relative;z-index:2}
+.hero-kicker{display:inline-flex;align-items:center;gap:11px;font-size:11px;font-weight:500;letter-spacing:2.6px;text-transform:uppercase;color:var(--accent);margin-bottom:32px}
+.hero-kicker-line{width:32px;height:1px;background:var(--accent)}
+.hero-h1{font-family:var(--serif);font-size:clamp(48px,6.4vw,86px);font-weight:300;line-height:1.04;color:var(--text);margin-bottom:8px;letter-spacing:-1px}
+.hero-h1 em{font-style:italic;font-weight:400;background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-h1-sub{font-family:var(--serif);font-size:clamp(34px,4.2vw,58px);font-weight:300;line-height:1.12;color:var(--primary);margin-bottom:30px;letter-spacing:-.3px}
+.hero-desc{font-size:16px;color:var(--text-dim);line-height:1.85;margin-bottom:38px;max-width:470px;font-weight:300}
 .hero-desc em{font-style:italic;color:var(--primary2)}
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
-.hero-cta-primary{font-size:12px;font-weight:500;letter-spacing:1.2px;text-transform:uppercase;color:var(--bg);background:var(--accent);padding:14px 32px;border-radius:2px;transition:background .2s;display:inline-block}
-.hero-cta-primary:hover{background:var(--accent2)}
-.hero-cta-ghost{font-size:12px;font-weight:500;letter-spacing:1.2px;text-transform:uppercase;color:var(--primary2);border:1px solid var(--border);padding:13px 28px;border-radius:2px;transition:all .2s;display:inline-block}
-.hero-cta-ghost:hover{border-color:var(--primary);background:var(--bg2)}
+.hero-desc a{color:var(--accent2);border-bottom:1px solid rgba(227,201,135,.35);transition:border-color .2s}
+.hero-desc a:hover{border-color:var(--accent2)}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.hero-cta-primary{font-size:12px;font-weight:500;letter-spacing:1.4px;text-transform:uppercase;color:#171411;background:var(--gold-grad);padding:16px 36px;border-radius:2px;transition:filter .2s,transform .2s;display:inline-block}
+.hero-cta-primary:hover{filter:brightness(1.12);transform:translateY(-2px)}
+.hero-cta-ghost{font-size:12px;font-weight:500;letter-spacing:1.4px;text-transform:uppercase;color:var(--text-dim);border:1px solid var(--border2);padding:15px 30px;border-radius:2px;transition:all .2s;display:inline-block}
+.hero-cta-ghost:hover{border-color:var(--accent);color:var(--accent2)}
 /* Hero room visual */
-.hero-visual{align-self:stretch;display:flex;align-items:stretch;padding-bottom:0}
-.hero-room{flex:1;border-radius:4px 4px 0 0;min-height:400px;position:relative;overflow:hidden;background:linear-gradient(160deg,#e8e0d4 0%,#d6cbbb 30%,#c4b8a4 60%,#b5a890 100%)}
-.hero-room::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(254,252,247,.08) 0%,rgba(120,113,108,.15) 100%)}
-.hero-room-accent{position:absolute;top:12%;left:8%;width:55%;height:35%;background:linear-gradient(135deg,rgba(254,252,247,.35) 0%,rgba(238,234,224,.20) 100%);border-radius:2px}
-.hero-room-shelf{position:absolute;top:38%;left:0;right:0;height:3px;background:rgba(87,83,78,.18)}
-.hero-room-rug{position:absolute;bottom:0;left:0;right:0;height:30%;background:linear-gradient(180deg,rgba(200,164,126,.12) 0%,rgba(200,164,126,.25) 100%)}
-.hero-room-lamp{position:absolute;top:10%;right:12%;width:4px;height:28%;background:rgba(87,83,78,.3);border-radius:2px}
-.hero-room-lamp::after{content:'';position:absolute;top:-14px;left:-14px;width:32px;height:14px;background:rgba(200,164,126,.55);border-radius:50% 50% 0 0}
-.hero-room-caption{position:absolute;bottom:16px;left:16px;font-size:10px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:rgba(87,83,78,.7);background:rgba(254,252,247,.75);padding:5px 10px;border-radius:2px;backdrop-filter:blur(4px)}
+.hero-visual{align-self:stretch;display:flex;align-items:stretch}
+.hero-room{flex:1;border-radius:5px;min-height:480px;position:relative;overflow:hidden;background:linear-gradient(165deg,#1d1a16 0%,#15120f 45%,#0f0d0b 100%);border:1px solid var(--border2);box-shadow:var(--shadow-lg)}
+.hero-room::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 25%,rgba(201,165,92,.22) 0%,transparent 55%)}
+.hero-room-frame{position:absolute;top:9%;left:9%;width:46%;height:40%;border:1px solid rgba(201,165,92,.3);border-radius:2px;background:linear-gradient(140deg,rgba(201,165,92,.10),rgba(201,165,92,.02))}
+.hero-room-frame2{position:absolute;top:9%;left:60%;width:24%;height:40%;border:1px solid rgba(201,165,92,.22);border-radius:2px}
+.hero-room-shelf{position:absolute;top:55%;left:9%;width:75%;height:1px;background:linear-gradient(90deg,rgba(201,165,92,.5),transparent)}
+.hero-room-rug{position:absolute;bottom:0;left:0;right:0;height:32%;background:linear-gradient(180deg,transparent 0%,rgba(201,165,92,.08) 100%)}
+.hero-room-lamp{position:absolute;top:14%;right:14%;width:3px;height:30%;background:rgba(201,165,92,.4);border-radius:2px}
+.hero-room-lamp::after{content:'';position:absolute;top:-18px;left:-15px;width:34px;height:18px;background:radial-gradient(ellipse at center top,rgba(227,201,135,.85),rgba(201,165,92,.15));border-radius:50% 50% 8px 8px;filter:blur(1px)}
+.hero-room-vase{position:absolute;bottom:32%;left:18%;width:26px;height:60px;background:linear-gradient(120deg,rgba(201,165,92,.4),rgba(201,165,92,.12));border-radius:14px 14px 6px 6px}
+.hero-room-caption{position:absolute;bottom:18px;left:18px;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--accent2);background:rgba(12,11,10,.7);padding:7px 13px;border-radius:2px;backdrop-filter:blur(4px);border:1px solid var(--border2)}
 
-/* ── STATS BAR ── */
-.statsbar{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.statsbar-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
-.stat-item{padding:26px 28px;border-right:1px solid var(--border);display:flex;align-items:center;gap:14px}
-.stat-item:last-child{border-right:none}
-.stat-number{font-family:var(--serif);font-size:28px;font-weight:400;color:var(--text);letter-spacing:-.5px;line-height:1}
-.stat-label{font-size:12px;font-weight:400;letter-spacing:.3px;color:var(--muted);line-height:1.4}
-.stat-divider{width:1px;height:32px;background:var(--border);flex-shrink:0;display:none}
+/* ── MARQUEE / CREDIBILITY STRIP ── */
+.cred{background:var(--bg2);border-bottom:1px solid var(--border);overflow:hidden}
+.cred-inner{max-width:1240px;margin:0 auto;padding:24px 32px;display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap}
+.cred-label{font-size:10px;font-weight:500;letter-spacing:2.4px;text-transform:uppercase;color:var(--muted)}
+.cred-item{font-family:var(--serif);font-size:18px;font-weight:400;color:var(--text-dim);font-style:italic;letter-spacing:.3px;white-space:nowrap}
+.cred-dot{width:4px;height:4px;border-radius:50%;background:var(--accent);flex-shrink:0}
 
 /* ── SECTION WRAPPERS ── */
-.section-wrap{max-width:1200px;margin:0 auto;padding:0 28px}
-.section-kicker{font-size:11px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent2);display:flex;align-items:center;gap:10px;margin-bottom:16px}
-.section-kicker::before{content:'';width:20px;height:1px;background:var(--accent)}
-.section-title{font-family:var(--serif);font-size:clamp(30px,4vw,44px);font-weight:400;color:var(--text);line-height:1.15;margin-bottom:10px;letter-spacing:-.3px}
-.section-sub{font-size:14px;color:var(--muted);font-weight:300;max-width:500px;line-height:1.75}
-.section-head-row{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:40px;flex-wrap:wrap;gap:16px}
-.section-view-all{font-size:12px;font-weight:500;letter-spacing:.8px;text-transform:uppercase;color:var(--primary);border-bottom:1px solid var(--border);padding-bottom:2px;transition:color .2s,border-color .2s}
-.section-view-all:hover{color:var(--accent);border-color:var(--accent)}
+.section-wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+.section-kicker{font-size:11px;font-weight:500;letter-spacing:2.8px;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:11px;margin-bottom:18px}
+.section-kicker::before{content:'';width:24px;height:1px;background:var(--accent)}
+.section-title{font-family:var(--serif);font-size:clamp(32px,4.4vw,50px);font-weight:300;color:var(--text);line-height:1.14;margin-bottom:12px;letter-spacing:-.4px}
+.section-title em{font-style:italic;background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.section-sub{font-size:15px;color:var(--text-dim);font-weight:300;max-width:540px;line-height:1.8}
+.section-head-row{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:48px;flex-wrap:wrap;gap:18px}
+.section-view-all{font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--text-dim);border-bottom:1px solid var(--border2);padding-bottom:3px;transition:color .2s,border-color .2s}
+.section-view-all:hover{color:var(--accent2);border-color:var(--accent)}
 
-/* ── DESIGN PILLARS ── */
-.pillars-section{padding:88px 0}
-.pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border)}
-.pillar-card{background:var(--bg2);padding:36px 32px;transition:background .25s}
-.pillar-card:hover{background:var(--bg)}
-.pillar-icon{width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:20px}
-.pillar-icon svg{width:28px;height:28px;stroke-width:1.25}
-.pillar-title{font-family:var(--serif);font-size:20px;font-weight:500;color:var(--text);margin-bottom:10px;line-height:1.2}
-.pillar-desc{font-size:13px;color:var(--muted);line-height:1.75;font-weight:300}
+/* ── STORY ── */
+.story-section{padding:104px 0;position:relative}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.story-visual{position:relative}
+.story-panel{aspect-ratio:4/5;border-radius:5px;border:1px solid var(--border2);background:linear-gradient(160deg,#1c1915 0%,#13110e 60%,#0e0c0a 100%);position:relative;overflow:hidden;box-shadow:var(--shadow-lg)}
+.story-panel::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 20%,rgba(201,165,92,.16),transparent 60%)}
+.story-panel-arch{position:absolute;top:14%;left:50%;transform:translateX(-50%);width:48%;height:62%;border:1px solid rgba(201,165,92,.32);border-radius:120px 120px 4px 4px;background:linear-gradient(180deg,rgba(201,165,92,.10),transparent)}
+.story-panel-floor{position:absolute;bottom:0;left:0;right:0;height:24%;background:linear-gradient(180deg,transparent,rgba(201,165,92,.07))}
+.story-badge{position:absolute;bottom:-28px;right:-20px;background:var(--surface);border:1px solid var(--border2);border-radius:4px;padding:22px 26px;box-shadow:var(--shadow-md);max-width:220px}
+.story-badge-num{font-family:var(--serif);font-size:38px;font-weight:400;background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+.story-badge-text{font-size:12px;color:var(--text-dim);font-weight:300;margin-top:6px;line-height:1.5}
+.story-body p{font-size:16px;color:var(--text-dim);line-height:1.9;font-weight:300;margin-bottom:18px}
+.story-body p em{font-style:italic;color:var(--primary2)}
+.story-body a.story-brandlink{color:var(--accent2);font-weight:400;border-bottom:1px solid rgba(227,201,135,.4);transition:border-color .2s}
+.story-body a.story-brandlink:hover{border-color:var(--accent2)}
+.story-quote{font-family:var(--serif);font-size:24px;font-weight:300;font-style:italic;color:var(--text);line-height:1.5;border-left:2px solid var(--accent);padding-left:24px;margin:28px 0}
+.story-sign{display:flex;align-items:center;gap:14px;margin-top:28px}
+.story-sign-name{font-family:var(--serif);font-size:18px;color:var(--text);font-style:italic}
+.story-sign-role{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
 
-/* ── FEATURED GUIDES ── */
-.guides-section{padding:80px 0;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.guides-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border)}
-.guide-card{background:var(--bg);position:relative;overflow:hidden;cursor:pointer;transition:background .2s}
-.guide-card:hover{background:var(--bg2)}
-.guide-visual{height:220px;position:relative;overflow:hidden}
-.guide-visual-a{background:linear-gradient(150deg,#e8ddd0 0%,#d4c4b0 35%,#c0a98e 65%,#a8906e 100%)}
-.guide-visual-b{background:linear-gradient(150deg,#e0d8ce 0%,#cfc2b2 35%,#bba898 65%,#a89080 100%)}
-.guide-visual::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(28,24,20,.18) 100%)}
-.guide-body{padding:28px 32px 32px}
-.guide-tag{font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--accent2);margin-bottom:12px}
-.guide-title{font-family:var(--serif);font-size:clamp(20px,2.5vw,26px);font-weight:500;color:var(--text);line-height:1.2;margin-bottom:12px;transition:color .25s}
+/* ── SERVICE / PILLAR CARDS ── */
+.pillars-section{padding:104px 0;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:5px;overflow:hidden}
+.pillar-card{background:var(--bg2);padding:42px 36px;transition:background .3s;position:relative}
+.pillar-card:hover{background:var(--surface)}
+.pillar-card::after{content:'';position:absolute;left:0;top:0;width:100%;height:2px;background:var(--gold-grad);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.pillar-card:hover::after{transform:scaleX(1)}
+.pillar-num{font-family:var(--serif);font-size:13px;color:var(--accent);letter-spacing:1px;margin-bottom:18px}
+.pillar-icon{width:46px;height:46px;display:flex;align-items:center;justify-content:center;color:var(--accent2);margin-bottom:22px;border:1px solid var(--border2);border-radius:50%}
+.pillar-icon svg{width:24px;height:24px;stroke-width:1.2}
+.pillar-title{font-family:var(--serif);font-size:23px;font-weight:500;color:var(--text);margin-bottom:11px;line-height:1.2}
+.pillar-desc{font-size:14px;color:var(--muted);line-height:1.8;font-weight:300}
+
+/* ── STATS BAND ── */
+.statsband{background:var(--bg);padding:88px 0;position:relative}
+.statsband::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:60%;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent)}
+.statsband-inner{max-width:1240px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border)}
+.stat-cell{background:var(--bg);padding:8px 28px;text-align:center}
+.stat-number{font-family:var(--serif);font-size:clamp(46px,5.5vw,64px);font-weight:300;background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-1px;line-height:1}
+.stat-label{font-size:12px;font-weight:400;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);margin-top:12px}
+.stat-desc{font-size:13px;color:var(--text-dim);font-weight:300;margin-top:8px;line-height:1.6}
+
+/* ── TOPICS GRID ── */
+.topics-section{padding:104px 0;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.topics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.topic-card{background:var(--surface);border:1px solid var(--border);border-radius:5px;padding:34px 30px;transition:transform .3s,border-color .3s,background .3s;position:relative;overflow:hidden}
+.topic-card:hover{transform:translateY(-5px);border-color:var(--border2);background:var(--surface2)}
+.topic-card::before{content:'';position:absolute;top:-40px;right:-40px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,rgba(201,165,92,.12),transparent 70%);opacity:0;transition:opacity .3s}
+.topic-card:hover::before{opacity:1}
+.topic-icon{font-family:var(--serif);font-size:30px;background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:16px;line-height:1}
+.topic-title{font-family:var(--serif);font-size:22px;font-weight:500;color:var(--text);margin-bottom:9px;line-height:1.25}
+.topic-desc{font-size:13px;color:var(--muted);line-height:1.75;font-weight:300}
+
+/* ── GUIDES ── */
+.guides-section{padding:104px 0;background:var(--bg)}
+.guides-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border);border:1px solid var(--border);border-radius:5px;overflow:hidden}
+.guide-card{background:var(--bg2);position:relative;overflow:hidden;cursor:pointer;transition:background .25s}
+.guide-card:hover{background:var(--surface)}
+.guide-visual{height:240px;position:relative;overflow:hidden}
+.guide-visual-a{background:linear-gradient(150deg,#221d15 0%,#181410 50%,#0f0d0a 100%)}
+.guide-visual-b{background:linear-gradient(150deg,#1e1a14 0%,#161310 50%,#100e0b 100%)}
+.guide-visual::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 60% 30%,rgba(201,165,92,.20),transparent 60%)}
+.guide-visual::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.5) 100%)}
+.guide-visual-frame{position:absolute;top:24px;left:24px;right:24px;bottom:24px;border:1px solid rgba(201,165,92,.22);border-radius:3px}
+.guide-body{padding:32px 36px 36px}
+.guide-tag{font-size:10px;font-weight:500;letter-spacing:2.2px;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.guide-title{font-family:var(--serif);font-size:clamp(22px,2.6vw,29px);font-weight:500;color:var(--text);line-height:1.2;margin-bottom:13px;transition:color .25s}
 .guide-card:hover .guide-title{color:var(--accent2)}
-.guide-excerpt{font-size:13px;color:var(--muted);line-height:1.75;font-weight:300;margin-bottom:20px}
-.guide-read-link{font-size:12px;font-weight:500;letter-spacing:.8px;text-transform:uppercase;color:var(--primary2);display:inline-flex;align-items:center;gap:6px;transition:gap .2s,color .2s}
-.guide-card:hover .guide-read-link{gap:10px;color:var(--accent2)}
-.guide-read-arrow{font-size:14px;transition:transform .2s}
-.guide-card:hover .guide-read-arrow{transform:translateX(3px)}
+.guide-excerpt{font-size:14px;color:var(--muted);line-height:1.8;font-weight:300;margin-bottom:22px}
+.guide-read-link{font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--text-dim);display:inline-flex;align-items:center;gap:7px;transition:gap .2s,color .2s}
+.guide-card:hover .guide-read-link{gap:12px;color:var(--accent2)}
 
-/* ── AUTHOR BIO ── */
-.author-section{padding:88px 0}
-.author-card{background:var(--bg2);border:1px solid var(--border);border-radius:4px;padding:52px 56px;display:grid;grid-template-columns:180px 1fr;gap:56px;align-items:start}
-.author-avatar-wrap{display:flex;flex-direction:column;align-items:center;gap:16px}
-.author-avatar{width:120px;height:120px;border-radius:50%;background:linear-gradient(145deg,var(--surface) 0%,var(--primary) 100%);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:32px;font-weight:400;color:var(--bg);letter-spacing:1px;border:3px solid var(--border);flex-shrink:0}
-.author-social{display:flex;gap:10px}
-.author-social-btn{width:32px;height:32px;border-radius:50%;border:1px solid var(--border);background:var(--bg);display:flex;align-items:center;justify-content:center;color:var(--muted);transition:color .2s,border-color .2s}
-.author-social-btn:hover{color:var(--accent);border-color:var(--accent)}
-.author-social-btn svg{width:14px;height:14px}
-.author-name{font-family:var(--serif);font-size:32px;font-weight:500;color:var(--text);margin-bottom:4px;letter-spacing:-.3px}
-.author-title{font-size:12px;font-weight:500;letter-spacing:1.8px;text-transform:uppercase;color:var(--accent2);margin-bottom:24px}
-.author-bio-text{font-size:14px;color:var(--primary2);line-height:1.9;font-weight:300;margin-bottom:14px}
-.author-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
-.author-tag{font-size:11px;font-weight:500;letter-spacing:.8px;text-transform:uppercase;color:var(--muted);background:var(--surface);border:1px solid var(--border);padding:6px 14px;border-radius:2px}
+/* ── AUTHOR ── */
+.author-section{padding:104px 0;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.author-card{background:linear-gradient(150deg,var(--surface),var(--bg2));border:1px solid var(--border2);border-radius:6px;padding:60px 64px;display:grid;grid-template-columns:200px 1fr;gap:64px;align-items:start;box-shadow:var(--shadow-md)}
+.author-avatar-wrap{display:flex;flex-direction:column;align-items:center;gap:18px}
+.author-avatar{width:140px;height:140px;border-radius:50%;background:var(--gold-grad);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:38px;font-weight:400;color:#171411;letter-spacing:1px;flex-shrink:0;box-shadow:0 0 0 1px var(--border2),0 0 40px rgba(201,165,92,.18)}
+.author-social{display:flex;gap:11px}
+.author-social-btn{width:36px;height:36px;border-radius:50%;border:1px solid var(--border2);background:var(--bg);display:flex;align-items:center;justify-content:center;color:var(--muted);transition:color .2s,border-color .2s}
+.author-social-btn:hover{color:var(--accent2);border-color:var(--accent)}
+.author-social-btn svg{width:15px;height:15px}
+.author-name{font-family:var(--serif);font-size:36px;font-weight:500;color:var(--text);margin-bottom:5px;letter-spacing:-.3px}
+.author-title{font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:26px}
+.author-bio-text{font-size:15px;color:var(--text-dim);line-height:1.95;font-weight:300;margin-bottom:16px}
+.author-bio-text em{font-style:italic;color:var(--primary2)}
+.author-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
+.author-tag{font-size:11px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--text-dim);background:var(--bg);border:1px solid var(--border2);padding:7px 15px;border-radius:2px}
 
 /* ── ARTICLES ── */
-.articles-section{padding:80px 0;background:var(--bg2);border-top:1px solid var(--border)}
-.articles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border)}
-.article-card{background:var(--bg);padding:0;overflow:hidden;transition:background .2s;cursor:pointer}
-.article-card:hover{background:var(--bg2)}
-.article-img{height:180px;position:relative;overflow:hidden}
-.article-img-a{background:linear-gradient(155deg,#e2d8cc 0%,#cec0ae 50%,#b8a490 100%)}
-.article-img-b{background:linear-gradient(155deg,#dfd5c6 0%,#cbbdac 50%,#b5a494 100%)}
-.article-img-c{background:linear-gradient(155deg,#e5ddd3 0%,#d2c6b8 50%,#bfb0a2 100%)}
-.article-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(28,24,20,.12) 100%)}
-.article-body{padding:24px 28px 28px}
-.article-tag{font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--accent2);margin-bottom:10px}
-.article-title{font-family:var(--serif);font-size:20px;font-weight:500;color:var(--text);line-height:1.25;margin-bottom:10px;transition:color .2s}
+.articles-section{padding:104px 0;background:var(--bg)}
+.article-filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px}
+.filter-btn{font-size:11px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--muted);background:transparent;border:1px solid var(--border2);padding:9px 18px;border-radius:2px;cursor:pointer;transition:all .2s}
+.filter-btn:hover{color:var(--text-dim);border-color:var(--accent-deep)}
+.filter-btn.active{color:#171411;background:var(--gold-grad);border-color:transparent}
+.articles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border:1px solid var(--border);border-radius:5px;overflow:hidden}
+.article-card{background:var(--bg2);overflow:hidden;transition:background .25s;cursor:pointer;display:block}
+.article-card:hover{background:var(--surface)}
+.article-img{height:190px;position:relative;overflow:hidden}
+.article-img-a{background:linear-gradient(155deg,#221d15 0%,#16120e 100%)}
+.article-img-b{background:linear-gradient(155deg,#1e1a14 0%,#14110e 100%)}
+.article-img-c{background:linear-gradient(155deg,#1c1813 0%,#13110d 100%)}
+.article-img::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 65% 30%,rgba(201,165,92,.18),transparent 60%)}
+.article-img::after{content:'';position:absolute;inset:18px;border:1px solid rgba(201,165,92,.18);border-radius:2px}
+.article-body{padding:26px 30px 30px}
+.article-tag{font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:11px}
+.article-title{font-family:var(--serif);font-size:21px;font-weight:500;color:var(--text);line-height:1.28;margin-bottom:11px;transition:color .2s}
 .article-card:hover .article-title{color:var(--accent2)}
-.article-excerpt{font-size:13px;color:var(--muted);line-height:1.75;font-weight:300;margin-bottom:18px}
+.article-excerpt{font-size:13px;color:var(--muted);line-height:1.8;font-weight:300;margin-bottom:20px}
 .article-footer{display:flex;align-items:center;justify-content:space-between}
-.article-meta{font-size:11px;color:var(--muted);font-weight:300}
-.article-link{font-size:11px;font-weight:500;letter-spacing:.8px;text-transform:uppercase;color:var(--primary2);transition:color .2s}
+.article-meta{font-size:11px;color:var(--muted);font-weight:300;letter-spacing:.3px}
+.article-link{font-size:11px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--text-dim);transition:color .2s}
 .article-card:hover .article-link{color:var(--accent2)}
 
+/* ── FAQ ── */
+.faq-section{padding:104px 0;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.faq-list{max-width:820px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--border);}
+.faq-item:first-child{border-top:1px solid var(--border)}
+.faq-q{width:100%;background:none;border:none;text-align:left;cursor:pointer;padding:26px 8px;display:flex;align-items:center;justify-content:space-between;gap:24px;font-family:var(--serif);font-size:21px;font-weight:500;color:var(--text);transition:color .2s}
+.faq-q:hover{color:var(--accent2)}
+.faq-icon{flex-shrink:0;width:26px;height:26px;border:1px solid var(--border2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:18px;line-height:1;transition:transform .3s,border-color .3s}
+.faq-item.open .faq-icon{transform:rotate(45deg);border-color:var(--accent)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a-inner{padding:0 8px 28px;font-size:14px;color:var(--text-dim);line-height:1.85;font-weight:300}
+.faq-a-inner a{color:var(--accent2);border-bottom:1px solid rgba(227,201,135,.35)}
+
 /* ── NEWSLETTER ── */
-.nl-section{padding:96px 0;background:var(--bg)}
-.nl-inner{max-width:640px;margin:0 auto;text-align:center}
-.nl-ornament{font-family:var(--serif);font-size:48px;font-weight:300;color:var(--border);line-height:1;margin-bottom:16px;display:block}
-.nl-kicker{font-size:11px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent2);display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:20px}
-.nl-kicker::before,.nl-kicker::after{content:'';width:28px;height:1px;background:var(--accent)}
-.nl-title{font-family:var(--serif);font-size:clamp(34px,5vw,52px);font-weight:400;color:var(--text);line-height:1.12;margin-bottom:14px;letter-spacing:-.5px}
-.nl-title em{font-style:italic;color:var(--accent2)}
-.nl-sub{font-size:15px;color:var(--muted);font-weight:300;line-height:1.8;margin-bottom:40px;max-width:440px;margin-left:auto;margin-right:auto}
-.nl-form{display:flex;max-width:440px;margin:0 auto 16px;border:1px solid var(--border);border-radius:3px;overflow:hidden;background:var(--bg);transition:border-color .2s;box-shadow:var(--shadow)}
+.nl-section{padding:112px 0;background:var(--bg);position:relative}
+.nl-section::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:50%;height:340px;background:radial-gradient(ellipse at center top,rgba(201,165,92,.10),transparent 70%);pointer-events:none}
+.nl-inner{max-width:660px;margin:0 auto;text-align:center;position:relative;z-index:2}
+.nl-ornament{font-family:var(--serif);font-size:46px;font-weight:300;color:var(--accent);line-height:1;margin-bottom:14px;display:block}
+.nl-kicker{font-size:11px;font-weight:500;letter-spacing:2.8px;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;justify-content:center;gap:11px;margin-bottom:22px}
+.nl-kicker::before,.nl-kicker::after{content:'';width:30px;height:1px;background:var(--accent)}
+.nl-title{font-family:var(--serif);font-size:clamp(36px,5.4vw,58px);font-weight:300;color:var(--text);line-height:1.1;margin-bottom:16px;letter-spacing:-.6px}
+.nl-title em{font-style:italic;background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nl-sub{font-size:15px;color:var(--text-dim);font-weight:300;line-height:1.85;margin-bottom:40px;max-width:480px;margin-left:auto;margin-right:auto}
+.nl-form{display:flex;max-width:460px;margin:0 auto 16px;border:1px solid var(--border2);border-radius:3px;overflow:hidden;background:var(--surface);transition:border-color .2s}
 .nl-form:focus-within{border-color:var(--accent)}
-.nl-form input{flex:1;background:transparent;border:none;padding:15px 20px;font-size:14px;font-family:var(--sans);outline:none;color:var(--text);min-width:0;font-weight:300}
+.nl-form input{flex:1;background:transparent;border:none;padding:16px 22px;font-size:14px;font-family:var(--sans);outline:none;color:var(--text);min-width:0;font-weight:300}
 .nl-form input::placeholder{color:var(--muted)}
-.nl-form button{background:var(--accent);color:var(--bg);border:none;padding:15px 24px;font-size:12px;font-weight:500;letter-spacing:1px;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:background .2s;font-family:var(--sans)}
-.nl-form button:hover{background:var(--accent2)}
-.nl-fine{font-size:11px;color:var(--muted);font-weight:300}
-.nl-divider{width:48px;height:1px;background:var(--border);margin:20px auto}
+.nl-form button{background:var(--gold-grad);color:#171411;border:none;padding:16px 28px;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:filter .2s;font-family:var(--sans)}
+.nl-form button:hover{filter:brightness(1.12)}
+.nl-fine{font-size:11px;color:var(--muted);font-weight:300;letter-spacing:.4px}
+.nl-divider{width:52px;height:1px;background:var(--accent);margin:22px auto;opacity:.5}
 
 /* ── FOOTER ── */
 .footer{background:var(--bg2);border-top:1px solid var(--border)}
-.footer-upper{max-width:1200px;margin:0 auto;padding:64px 28px 52px;display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:52px}
-.footer-brand{font-family:var(--serif);font-size:26px;font-weight:400;color:var(--text);letter-spacing:.2px;margin-bottom:12px}
+.footer-upper{max-width:1240px;margin:0 auto;padding:72px 32px 56px;display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:56px}
+.footer-brand{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.footer-brand-mark{width:36px;height:36px;border-radius:50%;background:var(--gold-grad);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:14px;font-weight:600;color:#171411}
+.footer-brand-name{font-family:var(--serif);font-size:25px;font-weight:400;color:var(--text);letter-spacing:.3px}
 .footer-brand-sub{font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
-.footer-desc{font-size:13px;color:var(--muted);line-height:1.85;font-weight:300;max-width:300px;margin-bottom:24px}
-.footer-author-chip{display:inline-flex;align-items:center;gap:10px;background:var(--bg);border:1px solid var(--border);padding:8px 14px 8px 10px;border-radius:50px}
-.footer-author-initials{width:30px;height:30px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:12px;font-weight:500;color:var(--bg);flex-shrink:0}
+.footer-desc{font-size:13px;color:var(--muted);line-height:1.9;font-weight:300;max-width:320px;margin-bottom:24px}
+.footer-desc a{color:var(--accent2);border-bottom:1px solid rgba(227,201,135,.3)}
+.footer-author-chip{display:inline-flex;align-items:center;gap:11px;background:var(--surface);border:1px solid var(--border2);padding:9px 16px 9px 11px;border-radius:50px}
+.footer-author-initials{width:32px;height:32px;border-radius:50%;background:var(--gold-grad);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:12px;font-weight:600;color:#171411;flex-shrink:0}
 .footer-author-name{font-size:12px;font-weight:500;color:var(--text)}
 .footer-author-role{font-size:10px;color:var(--muted);font-weight:300}
-.footer-col-title{font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--primary2);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border)}
-.footer-col a{display:block;font-size:13px;font-weight:300;color:var(--muted);padding:5px 0;transition:color .2s}
+.footer-col-title{font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:18px;padding-bottom:11px;border-bottom:1px solid var(--border2)}
+.footer-col a{display:block;font-size:13px;font-weight:300;color:var(--muted);padding:6px 0;transition:color .2s}
 .footer-col a:hover{color:var(--accent2)}
-.footer-nl-mini{margin-top:4px}
-.footer-nl-mini p{font-size:13px;color:var(--muted);font-weight:300;line-height:1.75;margin-bottom:14px}
-.footer-nl-mini-form{display:flex;flex-direction:column;gap:8px}
-.footer-nl-mini-input{background:var(--bg);border:1px solid var(--border);border-radius:2px;padding:10px 14px;font-size:13px;font-family:var(--sans);outline:none;color:var(--text);transition:border-color .2s;font-weight:300}
+.footer-nl-mini p{font-size:13px;color:var(--muted);font-weight:300;line-height:1.8;margin-bottom:14px}
+.footer-nl-mini-form{display:flex;flex-direction:column;gap:9px}
+.footer-nl-mini-input{background:var(--surface);border:1px solid var(--border2);border-radius:2px;padding:11px 15px;font-size:13px;font-family:var(--sans);outline:none;color:var(--text);transition:border-color .2s;font-weight:300}
 .footer-nl-mini-input:focus{border-color:var(--accent)}
 .footer-nl-mini-input::placeholder{color:var(--muted)}
-.footer-nl-mini-btn{background:var(--accent);color:var(--bg);border:none;padding:10px 16px;font-size:11px;font-weight:500;letter-spacing:1px;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:background .2s;font-family:var(--sans);text-align:center}
-.footer-nl-mini-btn:hover{background:var(--accent2)}
-/* Footer divider */
-.footer-mid-line{border:none;border-top:1px solid var(--border);margin:0}
-/* Footer lower bar - taupe/warm tone */
-.footer-lower{background:var(--primary);padding:0 28px}
-.footer-lower-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px;flex-wrap:wrap;gap:8px}
-.footer-lower-brand{font-family:var(--serif);font-size:16px;font-weight:400;color:rgba(254,252,247,.9);letter-spacing:.3px}
-.footer-lower-copy{font-size:11px;color:rgba(254,252,247,.55);font-weight:300;letter-spacing:.3px}
-.footer-lower-links{display:flex;gap:20px}
-.footer-lower-links a{font-size:11px;color:rgba(254,252,247,.55);font-weight:300;letter-spacing:.3px;transition:color .2s}
-.footer-lower-links a:hover{color:rgba(254,252,247,.9)}
+.footer-nl-mini-btn{background:var(--gold-grad);color:#171411;border:none;padding:11px 16px;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:filter .2s;font-family:var(--sans);text-align:center}
+.footer-nl-mini-btn:hover{filter:brightness(1.12)}
+.footer-lower{background:var(--bg);border-top:1px solid var(--border);padding:0 32px}
+.footer-lower-inner{max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:62px;flex-wrap:wrap;gap:10px}
+.footer-lower-copy{font-size:11px;color:var(--muted);font-weight:300;letter-spacing:.3px}
+.footer-lower-links{display:flex;gap:22px}
+.footer-lower-links a{font-size:11px;color:var(--muted);font-weight:300;letter-spacing:.3px;transition:color .2s}
+.footer-lower-links a:hover{color:var(--accent2)}
 
 /* ── SCROLL REVEAL ── */
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .reveal.visible{opacity:1;transform:none}
-
-/* ── DECORATIVE DIVIDER ── */
-.deco-divider{display:flex;align-items:center;gap:12px;padding:0;color:var(--border)}
-.deco-divider-line{flex:1;height:1px;background:var(--border)}
-.deco-divider-mark{font-family:var(--serif);font-size:18px;color:var(--border);font-weight:300;line-height:1;flex-shrink:0}
 
 /* ── RESPONSIVE ── */
 @media(max-width:1024px){
-  .hero-inner{grid-template-columns:1fr;gap:48px}
+  .hero-inner{grid-template-columns:1fr;gap:52px}
   .hero-visual{display:none}
-  .hero-content{padding-bottom:60px}
-  .footer-upper{grid-template-columns:1fr 1fr;gap:40px}
-  .author-card{padding:40px 40px}
-  .author-card{grid-template-columns:140px 1fr;gap:40px}
+  .story-grid{grid-template-columns:1fr;gap:56px}
+  .story-badge{position:static;margin-top:24px;max-width:none}
+  .footer-upper{grid-template-columns:1fr 1fr;gap:44px}
+  .author-card{grid-template-columns:150px 1fr;gap:44px;padding:48px 44px}
 }
 @media(max-width:900px){
   .pillars-grid{grid-template-columns:repeat(2,1fr)}
+  .topics-grid{grid-template-columns:repeat(2,1fr)}
   .guides-grid{grid-template-columns:1fr}
   .articles-grid{grid-template-columns:1fr}
+  .statsband-inner{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:768px){
-  .hero{padding:56px 20px 0;min-height:auto}
-  .hero-content{padding-bottom:48px}
-  .hero-h1{font-size:clamp(36px,10vw,52px)}
-  .statsbar-inner{grid-template-columns:repeat(2,1fr)}
-  .stat-item{padding:20px 20px}
-  .stat-item:nth-child(2){border-right:none}
-  .stat-item:nth-child(3){border-top:1px solid var(--border)}
-  .stat-item:nth-child(4){border-top:1px solid var(--border);border-right:none}
+  .hero{padding:64px 22px 72px}
   .pillars-grid{grid-template-columns:1fr}
-  .author-card{grid-template-columns:1fr;gap:28px;padding:32px 28px}
-  .author-avatar-wrap{flex-direction:row;justify-content:flex-start;align-items:center}
-  .footer-upper{grid-template-columns:1fr;gap:36px;padding:48px 20px 40px}
-  .footer-lower-inner{height:auto;padding:16px 0;flex-direction:column;align-items:flex-start;gap:12px}
-  .section-wrap{padding:0 20px}
-  .pillars-section,.author-section,.articles-section,.nl-section{padding:60px 0}
-  .guides-section{padding:60px 0}
+  .topics-grid{grid-template-columns:1fr}
+  .author-card{grid-template-columns:1fr;gap:30px;padding:36px 28px;text-align:center}
+  .author-avatar-wrap{flex-direction:row;justify-content:center}
+  .author-tags{justify-content:center}
+  .cred-inner{gap:24px}
+  .footer-upper{grid-template-columns:1fr;gap:40px;padding:56px 22px 44px}
+  .footer-lower-inner{height:auto;padding:18px 0;flex-direction:column;align-items:flex-start;gap:12px}
+  .section-wrap{padding:0 22px}
+  .story-section,.pillars-section,.topics-section,.guides-section,.author-section,.articles-section,.faq-section,.nl-section,.statsband{padding:64px 0}
+  .statsband-inner{padding:0 22px}
 }
 @media(max-width:480px){
-  .statsbar-inner{grid-template-columns:1fr}
-  .stat-item{border-right:none;border-bottom:1px solid var(--border)}
-  .stat-item:nth-child(3){border-top:none}
-  .stat-item:nth-child(4){border-top:none}
-  .hero-actions{flex-direction:column;align-items:flex-start}
-  .nl-form{flex-direction:column;border:none;background:transparent;box-shadow:none;gap:8px}
-  .nl-form input{border:1px solid var(--border);border-radius:2px;background:var(--bg)}
+  .statsband-inner{grid-template-columns:1fr}
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .hero-cta-primary,.hero-cta-ghost{text-align:center}
+  .nl-form{flex-direction:column;border:none;background:transparent;gap:9px}
+  .nl-form input{border:1px solid var(--border2);border-radius:2px;background:var(--surface)}
   .nl-form input:focus{border-color:var(--accent)}
   .nl-form button{border-radius:2px}
-  .footer-lower-links{flex-wrap:wrap;gap:14px}
+  .footer-lower-links{flex-wrap:wrap;gap:16px}
 }
 </style>
 </head>
@@ -282,25 +344,27 @@ button,input{font-family:var(--sans)}
   <div class="nav-inner">
     <a href="./" class="nav-mark">
       <div class="nav-dh">DH</div>
-      <span class="nav-name">Dalmend Home</span>
+      <span class="nav-name">Dalmend <span>Home</span></span>
     </a>
     <div class="nav-links">
-      <a href="#pillars" class="active">Design</a>
-      <a href="#staging">Staging</a>
-      <a href="#articles">ROI</a>
-      <a href="#about">About</a>
+      <a href="./#story" class="active">The Studio</a>
+      <a href="./#services">Services</a>
+      <a href="./#topics">What We Cover</a>
+      <a href="./#articles">Journal</a>
+      <a href="about.html">About</a>
     </div>
-    <a href="#newsletter" class="nav-cta">The Home Letter</a>
+    <a href="./#newsletter" class="nav-cta">The Atelier Letter</a>
     <button class="nav-burger" onclick="document.getElementById('nav-mobile').classList.toggle('open')" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
   </div>
   <div class="nav-mobile" id="nav-mobile">
-    <a href="#pillars" onclick="document.getElementById('nav-mobile').classList.remove('open')">Design</a>
-    <a href="#staging" onclick="document.getElementById('nav-mobile').classList.remove('open')">Staging</a>
-    <a href="#articles" onclick="document.getElementById('nav-mobile').classList.remove('open')">ROI</a>
-    <a href="#about" onclick="document.getElementById('nav-mobile').classList.remove('open')">About</a>
-    <a href="#newsletter" onclick="document.getElementById('nav-mobile').classList.remove('open')">The Home Letter</a>
+    <a href="./#story" onclick="document.getElementById('nav-mobile').classList.remove('open')">The Studio</a>
+    <a href="./#services" onclick="document.getElementById('nav-mobile').classList.remove('open')">Services</a>
+    <a href="./#topics" onclick="document.getElementById('nav-mobile').classList.remove('open')">What We Cover</a>
+    <a href="./#articles" onclick="document.getElementById('nav-mobile').classList.remove('open')">Journal</a>
+    <a href="about.html" onclick="document.getElementById('nav-mobile').classList.remove('open')">About</a>
+    <a href="./#newsletter" onclick="document.getElementById('nav-mobile').classList.remove('open')">The Atelier Letter</a>
   </div>
 </nav>
 <!--/SHELL:HEADER-->
@@ -311,145 +375,230 @@ button,input{font-family:var(--sans)}
     <div class="hero-content">
       <div class="hero-kicker">
         <span class="hero-kicker-line"></span>
-        Interior Design and Real Estate
+        Luxury Interiors for Houses and Mansions
       </div>
-      <h1 class="hero-h1">Design That<br><em>Earns</em></h1>
-      <div class="hero-h1-sub">Its Keep.</div>
-      <p class="hero-desc">Interior design advice that considers both aesthetics and financial return - from a designer who also <em>flips properties.</em></p>
+      <h1 class="hero-h1">Rooms That Hold a<br><em>Quiet Power</em></h1>
+      <div class="hero-h1-sub">Interiors for the finest homes.</div>
+      <p class="hero-desc">Dalmend Home decorates high-end houses and grand mansions - statement rooms built from rare materials, sculptural lighting and collections worth a slow second look. A studio within the <a href="https://dalmend.com">Dalmend Collective</a>.</p>
       <div class="hero-actions">
-        <a href="#guides" class="hero-cta-primary">Explore Guides</a>
-        <a href="#articles" class="hero-cta-ghost">Read Articles</a>
+        <a href="./#services" class="hero-cta-primary">Explore the Studio</a>
+        <a href="./#articles" class="hero-cta-ghost">Read the Journal</a>
       </div>
     </div>
     <div class="hero-visual">
       <div class="hero-room">
-        <div class="hero-room-accent"></div>
+        <div class="hero-room-frame"></div>
+        <div class="hero-room-frame2"></div>
         <div class="hero-room-shelf"></div>
-        <div class="hero-room-rug"></div>
+        <div class="hero-room-vase"></div>
         <div class="hero-room-lamp"></div>
-        <div class="hero-room-caption">Warm editorial interiors</div>
+        <div class="hero-room-rug"></div>
+        <div class="hero-room-caption">The Drawing Room - Estate Series</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- STATS BAR -->
-<section class="statsbar reveal">
-  <div class="statsbar-inner">
-    <div class="stat-item">
-      <div>
-        <div class="stat-number">11</div>
-        <div class="stat-label">Years Designing</div>
+<!-- CREDIBILITY STRIP -->
+<section class="cred reveal">
+  <div class="cred-inner">
+    <span class="cred-label">Trusted For</span>
+    <span class="cred-item">Private Estates</span>
+    <span class="cred-dot"></span>
+    <span class="cred-item">Mansion Renovations</span>
+    <span class="cred-dot"></span>
+    <span class="cred-item">Heritage Homes</span>
+    <span class="cred-dot"></span>
+    <span class="cred-item">Penthouse Residences</span>
+    <span class="cred-dot"></span>
+    <span class="cred-item">Waterfront Villas</span>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story-section" id="story">
+  <div class="section-wrap">
+    <div class="story-grid">
+      <div class="story-visual reveal">
+        <div class="story-panel">
+          <div class="story-panel-arch"></div>
+          <div class="story-panel-floor"></div>
+        </div>
+        <div class="story-badge">
+          <div class="story-badge-num">2009</div>
+          <div class="story-badge-text">Designing for grand residences since</div>
+        </div>
       </div>
-    </div>
-    <div class="stat-item">
-      <div>
-        <div class="stat-number">6</div>
-        <div class="stat-label">Properties Flipped</div>
-      </div>
-    </div>
-    <div class="stat-item">
-      <div>
-        <div class="stat-number">ROI</div>
-        <div class="stat-label">First Approach</div>
-      </div>
-    </div>
-    <div class="stat-item">
-      <div>
-        <div class="stat-number">Staging</div>
-        <div class="stat-label">That Sells</div>
+      <div class="story-body reveal">
+        <div class="section-kicker">The Philosophy</div>
+        <h2 class="section-title">A Studio Within the <em>Dalmend Collective</em></h2>
+        <p>Dalmend Home is the residential interiors studio of the <a class="story-brandlink" href="https://dalmend.com">Dalmend Collective</a> - a family of design practices devoted to the craft of living well. Where the Collective shapes spaces of every scale, our studio gives its full attention to one thing: the high-end house and the mansion.</p>
+        <p>We believe true luxury is not loud. It is the depth of a hand-rubbed walnut panel, the weight of a brass door pull, the way late light falls across honed marble. <em>Restraint, material honesty and a sense of occasion</em> guide every room we touch.</p>
+        <div class="story-quote">"A great house is not decorated. It is composed - room by room, like movements in a quiet symphony."</div>
+        <p>From the entrance hall that sets the tone to the private library that ends the day, we curate interiors meant to be lived in for generations - not refreshed every season.</p>
+        <div class="story-sign">
+          <span class="story-sign-name">Olivia Grant</span>
+          <span class="story-sign-role">Founding Designer</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- DESIGN PILLARS -->
-<section class="pillars-section" id="pillars">
+<!-- SERVICES / PILLARS -->
+<section class="pillars-section" id="services">
   <div class="section-wrap">
     <div class="section-head-row reveal">
       <div>
-        <div class="section-kicker">Areas of Focus</div>
-        <h2 class="section-title">Design With Purpose</h2>
-        <p class="section-sub">Six pillars that guide every recommendation on Dalmend Home - from first impressions to final sale price.</p>
+        <div class="section-kicker">What the Studio Does</div>
+        <h2 class="section-title">The Art of the <em>Grand Interior</em></h2>
+        <p class="section-sub">Six disciplines that shape every Dalmend Home residence - from first sketch to the final placed object.</p>
       </div>
     </div>
-  </div>
-  <div style="max-width:1200px;margin:0 auto;padding:0 28px">
     <div class="pillars-grid reveal">
 
-      <!-- Interior Design -->
       <div class="pillar-card">
+        <div class="pillar-num">01</div>
         <div class="pillar-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-            <polyline points="9 22 9 12 15 12 15 22"/>
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
           </svg>
         </div>
-        <div class="pillar-title">Interior Design</div>
-        <div class="pillar-desc">Space planning, material selection, and styling that creates rooms people genuinely want to live in - and buyers want to purchase.</div>
+        <div class="pillar-title">Whole-Home Design</div>
+        <div class="pillar-desc">Cohesive interior schemes for entire estates, where every room answers to a single, considered narrative of light, material and proportion.</div>
       </div>
 
-      <!-- Home Staging -->
-      <div class="pillar-card" id="staging">
+      <div class="pillar-card">
+        <div class="pillar-num">02</div>
         <div class="pillar-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="7" width="20" height="14" rx="2"/>
-            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
-            <line x1="12" y1="12" x2="12" y2="16"/>
-            <line x1="10" y1="14" x2="14" y2="14"/>
+            <path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.8 5.7 21l2.3-7.2-6-4.4h7.6z"/>
           </svg>
         </div>
-        <div class="pillar-title">Home Staging</div>
-        <div class="pillar-desc">Strategic staging that photographs beautifully, feels immediately livable, and minimizes the days your property sits on market.</div>
+        <div class="pillar-title">Statement Rooms</div>
+        <div class="pillar-desc">Drawing rooms, grand staircases, dining halls and libraries designed as set pieces - the spaces a great house is remembered by.</div>
       </div>
 
-      <!-- Renovation ROI -->
       <div class="pillar-card">
+        <div class="pillar-num">03</div>
         <div class="pillar-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
-            <polyline points="17 6 23 6 23 12"/>
+            <path d="M12 3a6 6 0 0 0-6 6c0 2.2 1.2 3.6 2.5 5 .8.9 1.5 1.7 1.5 3h4c0-1.3.7-2.1 1.5-3C16.8 12.6 18 11.2 18 9a6 6 0 0 0-6-6z"/><line x1="9" y1="21" x2="15" y2="21"/>
           </svg>
         </div>
-        <div class="pillar-title">Renovation ROI</div>
-        <div class="pillar-desc">The honest numbers behind common renovations. Which projects deliver real returns and which ones look great on paper but rarely recoup their cost.</div>
+        <div class="pillar-title">Lighting Architecture</div>
+        <div class="pillar-desc">Layered schemes built around chandeliers, sculptural fixtures and concealed sources that flatter art, stone and skin alike.</div>
       </div>
 
-      <!-- Color and Light -->
       <div class="pillar-card">
+        <div class="pillar-num">04</div>
         <div class="pillar-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"/>
-            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+            <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
           </svg>
         </div>
-        <div class="pillar-title">Color and Light</div>
-        <div class="pillar-desc">How natural light affects color perception, which palettes read as premium, and the paint decisions that consistently improve perceived value.</div>
+        <div class="pillar-title">Material Curation</div>
+        <div class="pillar-desc">Sourcing rare marble, figured timber, hand-applied plaster and bespoke metalwork - the substance behind every refined surface.</div>
       </div>
 
-      <!-- Property Value -->
       <div class="pillar-card">
+        <div class="pillar-num">05</div>
         <div class="pillar-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
           </svg>
         </div>
-        <div class="pillar-title">Property Value</div>
-        <div class="pillar-desc">Interior decisions through the lens of a real estate investor - what appraisers notice, what buyers pay premiums for, and what agents overlook.</div>
+        <div class="pillar-title">Art and Object Placement</div>
+        <div class="pillar-desc">Collections, antiques and commissioned pieces hung and positioned so each holds its own conversation within the room.</div>
       </div>
 
-      <!-- Curb Appeal -->
       <div class="pillar-card">
+        <div class="pillar-num">06</div>
         <div class="pillar-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            <path d="M2 22h20M4 22V8l8-5 8 5v14M9 22v-6h6v6"/>
           </svg>
         </div>
-        <div class="pillar-title">Curb Appeal</div>
-        <div class="pillar-desc">First impressions are made before buyers walk through the door. Exterior styling, entryway design, and landscaping decisions that set the tone.</div>
+        <div class="pillar-title">Heritage Restoration</div>
+        <div class="pillar-desc">Returning period mansions to grace - cornices, panelling and proportion honoured, comfort and quiet technology added.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<section class="statsband reveal">
+  <div class="statsband-inner">
+    <div class="stat-cell">
+      <div class="stat-number" data-count="86">0</div>
+      <div class="stat-label">Estates Designed</div>
+      <div class="stat-desc">Private residences across three continents</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-number" data-count="15" data-suffix="+">0</div>
+      <div class="stat-label">Years of Practice</div>
+      <div class="stat-desc">Devoted to high-end residential interiors</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-number" data-count="240" data-suffix="+">0</div>
+      <div class="stat-label">Statement Rooms</div>
+      <div class="stat-desc">Halls, libraries and salons composed</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-number" data-count="40" data-suffix="K">0</div>
+      <div class="stat-label">Square Metres</div>
+      <div class="stat-desc">Of grand interior delivered to date</div>
+    </div>
+  </div>
+</section>
+
+<!-- TOPICS -->
+<section class="topics-section" id="topics">
+  <div class="section-wrap">
+    <div class="section-head-row reveal">
+      <div>
+        <div class="section-kicker">What We Cover</div>
+        <h2 class="section-title">The Vocabulary of a <em>Fine Home</em></h2>
+        <p class="section-sub">Our journal explores the elements that turn a large house into a remarkable one.</p>
+      </div>
+    </div>
+    <div class="topics-grid reveal">
+
+      <div class="topic-card">
+        <div class="topic-icon">&#9671;</div>
+        <div class="topic-title">Luxury Living Rooms</div>
+        <div class="topic-desc">Drawing rooms and salons designed for conversation, art and the long evening - generous, layered, never cluttered.</div>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-icon">&#10070;</div>
+        <div class="topic-title">Marble and Stone</div>
+        <div class="topic-desc">Selecting, bookmatching and detailing natural stone for floors, fireplaces and the surfaces that anchor a room.</div>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-icon">&#9788;</div>
+        <div class="topic-title">Sculptural Lighting</div>
+        <div class="topic-desc">Chandeliers, pendants and concealed light - how the right scheme gives a mansion its evening atmosphere.</div>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-icon">&#9670;</div>
+        <div class="topic-title">Grand Entrances</div>
+        <div class="topic-desc">Entrance halls and staircases that announce the house - the first impression that every other room answers to.</div>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-icon">&#9672;</div>
+        <div class="topic-title">Bespoke Joinery</div>
+        <div class="topic-desc">Panelled libraries, dressing rooms and cabinetry made by hand to the millimetre and to the client.</div>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-icon">&#10038;</div>
+        <div class="topic-title">Collecting and Curation</div>
+        <div class="topic-desc">Building, placing and living with art, antiques and rare objects so a home reads as a life, not a showroom.</div>
       </div>
 
     </div>
@@ -461,32 +610,30 @@ button,input{font-family:var(--sans)}
   <div class="section-wrap">
     <div class="section-head-row reveal">
       <div>
-        <div class="section-kicker">Featured</div>
-        <h2 class="section-title">Essential Reading</h2>
+        <div class="section-kicker">From the Atelier</div>
+        <h2 class="section-title">Essential <em>Reading</em></h2>
       </div>
-      <a href="#articles" class="section-view-all">All guides</a>
+      <a href="./#articles" class="section-view-all">All guides</a>
     </div>
-  </div>
-  <div style="max-width:1200px;margin:0 auto;padding:0 28px">
     <div class="guides-grid reveal">
 
       <div class="guide-card">
-        <div class="guide-visual guide-visual-a"></div>
+        <div class="guide-visual guide-visual-a"><div class="guide-visual-frame"></div></div>
         <div class="guide-body">
-          <div class="guide-tag">Renovation ROI</div>
-          <div class="guide-title">Which Renovations Actually Pay Off</div>
-          <p class="guide-excerpt">After flipping six properties and designing dozens more, I can tell you exactly which projects tend to recoup their cost at resale - and which ones feel rewarding but rarely recover their investment. The numbers may surprise you.</p>
-          <a href="#" class="guide-read-link">Read guide <span class="guide-read-arrow">&#8594;</span></a>
+          <div class="guide-tag">Statement Rooms</div>
+          <div class="guide-title">Designing a Drawing Room That Commands the House</div>
+          <p class="guide-excerpt">The drawing room sets the register for an entire residence. We walk through scale, the placement of the fireplace, layered seating and the single sculptural gesture that gives the space its quiet authority - the moves that separate a grand room from a merely large one.</p>
+          <a href="./#articles" class="guide-read-link">Read guide <span>&#8594;</span></a>
         </div>
       </div>
 
       <div class="guide-card">
-        <div class="guide-visual guide-visual-b"></div>
+        <div class="guide-visual guide-visual-b"><div class="guide-visual-frame"></div></div>
         <div class="guide-body">
-          <div class="guide-tag">Home Staging</div>
-          <div class="guide-title">The Staging Checklist That Sells Homes Faster</div>
-          <p class="guide-excerpt">Professional staging does not have to cost thousands. This room-by-room checklist covers the high-impact moves that make buyers feel at home immediately - and the depersonalization steps most sellers skip to their detriment.</p>
-          <a href="#" class="guide-read-link">Read guide <span class="guide-read-arrow">&#8594;</span></a>
+          <div class="guide-tag">Materials and Light</div>
+          <div class="guide-title">Choosing Marble and Lighting That Age With the Home</div>
+          <p class="guide-excerpt">Rare stone and considered light are the two investments a mansion never outgrows. This guide covers bookmatching, honed versus polished finishes, and a layered lighting plan that flatters every surface from morning to midnight.</p>
+          <a href="./#articles" class="guide-read-link">Read guide <span>&#8594;</span></a>
         </div>
       </div>
 
@@ -494,102 +641,99 @@ button,input{font-family:var(--sans)}
   </div>
 </section>
 
-<!-- AUTHOR BIO -->
-<section class="author-section" id="about">
+<!-- AUTHOR -->
+<section class="author-section" id="author">
   <div class="section-wrap">
     <div class="section-head-row reveal">
       <div>
-        <div class="section-kicker">The Author</div>
-        <h2 class="section-title">Olivia Grant</h2>
+        <div class="section-kicker">The Designer</div>
+        <h2 class="section-title">Behind the <em>Studio</em></h2>
       </div>
     </div>
     <div class="author-card reveal">
       <div class="author-avatar-wrap">
         <div class="author-avatar">OG</div>
         <div class="author-social">
-          <a href="#" class="author-social-btn" aria-label="Pinterest">
+          <a href="./" class="author-social-btn" aria-label="Pinterest">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.76 1.23-5.19 1.23-5.19s-.31-.63-.31-1.57c0-1.47.85-2.57 1.91-2.57.9 0 1.34.68 1.34 1.49 0 .91-.58 2.27-.88 3.53-.25 1.05.52 1.91 1.55 1.91 1.86 0 3.11-2.39 3.11-5.22 0-2.15-1.45-3.78-4.09-3.78-2.98 0-4.83 2.22-4.83 4.71 0 .86.24 1.46.62 1.93.17.2.19.28.13.51-.04.17-.14.57-.18.73-.06.23-.24.32-.45.23-1.67-.71-2.44-2.6-2.44-4.73 0-3.55 2.99-7.82 8.96-7.82 4.82 0 7.98 3.5 7.98 7.26 0 4.98-2.76 8.7-6.81 8.7-1.36 0-2.65-.73-3.09-1.56l-.84 3.22c-.3 1.15-.93 2.3-1.44 3.18.96.29 1.96.44 3 .44 5.52 0 10-4.48 10-10S17.52 2 12 2z"/>
             </svg>
           </a>
-          <a href="#" class="author-social-btn" aria-label="Instagram">
+          <a href="./" class="author-social-btn" aria-label="Instagram">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
             </svg>
           </a>
         </div>
       </div>
       <div>
         <div class="author-name">Olivia Grant</div>
-        <div class="author-title">Interior Designer and Property Investor</div>
-        <p class="author-bio-text">I've designed interiors professionally for 11 years while simultaneously flipping six investment properties. That combination taught me what actually adds value versus what just looks good on a mood board.</p>
-        <p class="author-bio-text">Dalmend Home is where design meets ROI. If a renovation or styling decision doesn't improve livability or resale value, I'll tell you to skip it.</p>
+        <div class="author-title">Founding Designer - Dalmend Home</div>
+        <p class="author-bio-text">For over fifteen years I have designed interiors for private estates, heritage mansions and waterfront residences. My work begins not with a mood board but with the house itself - its light, its proportion, the way it wants to be lived in.</p>
+        <p class="author-bio-text">Dalmend Home is my studio within the <em>Dalmend Collective</em>, dedicated entirely to high-end houses. Here I share the thinking behind grand interiors: how to choose materials that age with grace, how to compose a statement room, and how to let a great house breathe.</p>
         <div class="author-tags">
-          <span class="author-tag">11 Years Design</span>
-          <span class="author-tag">6 Properties Flipped</span>
-          <span class="author-tag">Interior Design</span>
-          <span class="author-tag">Staging Expert</span>
-          <span class="author-tag">Property Investor</span>
+          <span class="author-tag">Estate Interiors</span>
+          <span class="author-tag">Heritage Restoration</span>
+          <span class="author-tag">Material Curation</span>
+          <span class="author-tag">Statement Rooms</span>
+          <span class="author-tag">Dalmend Collective</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- RECENT ARTICLES -->
+<!-- ARTICLES -->
 <section class="articles-section" id="articles">
   <div class="section-wrap">
     <div class="section-head-row reveal">
       <div>
-        <div class="section-kicker">Latest Writing</div>
-        <h2 class="section-title">Recent Articles</h2>
+        <div class="section-kicker">The Journal</div>
+        <h2 class="section-title">Latest from the <em>Studio</em></h2>
       </div>
-      <a href="#" class="section-view-all">View all</a>
+      <a href="./#newsletter" class="section-view-all">Subscribe</a>
     </div>
+    <div class="article-filters reveal" id="article-filters"></div>
     <div class="articles-grid reveal" id="articles-grid">
+      <p style="grid-column:1/-1;text-align:center;color:#9a8e7d;font-size:17px;padding:48px 20px">New articles from the studio are coming soon.</p>
+    </div>
+  </div>
+</section>
 
-      <!-- Article 1 -->
-      <div class="article-card">
-        <div class="article-img article-img-a"></div>
-        <div class="article-body">
-          <div class="article-tag">Renovation ROI</div>
-          <div class="article-title">Kitchen Renovation ROI: What the Numbers Actually Show</div>
-          <p class="article-excerpt">A kitchen renovation is one of the most emotionally charged home decisions a seller faces. Here's a clear-eyed look at which kitchen updates consistently recover their cost and which ones deliver diminishing returns at resale.</p>
-          <div class="article-footer">
-            <span class="article-meta">Olivia Grant</span>
-            <a href="#" class="article-link">Read Article</a>
-          </div>
-        </div>
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="section-wrap">
+    <div class="section-head-row reveal" style="justify-content:center;text-align:center;flex-direction:column;align-items:center">
+      <div>
+        <div class="section-kicker" style="justify-content:center">Questions</div>
+        <h2 class="section-title">Before You <em>Begin</em></h2>
+      </div>
+    </div>
+    <div class="faq-list reveal">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What kind of homes does Dalmend Home design?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Our studio works exclusively with high-end residences - private estates, mansions, heritage homes, penthouse residences and waterfront villas. Every project receives a whole-home approach, where each room is composed as part of a single design narrative.</div></div>
       </div>
 
-      <!-- Article 2 -->
-      <div class="article-card">
-        <div class="article-img article-img-b"></div>
-        <div class="article-body">
-          <div class="article-tag">Color Theory</div>
-          <div class="article-title">Paint Colors That Add Perceived Value to Any Room</div>
-          <p class="article-excerpt">Color is the least expensive renovation you can make - and one of the highest-leverage ones. These are the palettes that consistently photograph well, read as premium in person, and hold up across shifting buyer preferences.</p>
-          <div class="article-footer">
-            <span class="article-meta">Olivia Grant</span>
-            <a href="#" class="article-link">Read Article</a>
-          </div>
-        </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">How is Dalmend Home connected to the Dalmend Collective?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Dalmend Home is the residential interiors studio within the <a href="https://dalmend.com">Dalmend Collective</a>, a family of design practices devoted to the craft of living well. The studio gives its full attention to the high-end house and the mansion.</div></div>
       </div>
 
-      <!-- Article 3 -->
-      <div class="article-card">
-        <div class="article-img article-img-c"></div>
-        <div class="article-body">
-          <div class="article-tag">Home Staging</div>
-          <div class="article-title">How to Stage a Home for Sale Without Spending a Fortune</div>
-          <p class="article-excerpt">Most sellers either overspend on staging or skip it entirely. This guide walks through the specific moves that create maximum buyer appeal with minimum outlay - ranked by their impact on days on market and final sale price.</p>
-          <div class="article-footer">
-            <span class="article-meta">Olivia Grant</span>
-            <a href="#" class="article-link">Read Article</a>
-          </div>
-        </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Do you work with period and heritage properties?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes. Heritage restoration is one of our six core disciplines. We return period mansions to grace - honouring cornices, panelling and original proportion while quietly introducing modern comfort and considered technology.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Can you source rare materials and bespoke pieces?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Material curation is central to our work. We source rare marble, figured timber, hand-applied plaster and bespoke metalwork, and we commission joinery and objects made by hand to each client and each room.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What does the journal cover?<span class="faq-icon">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">The journal explores the vocabulary of a fine home - luxury living rooms, marble and stone, sculptural lighting, grand entrances, bespoke joinery, and the art of collecting and curation. Subscribe to The Atelier Letter to receive new writing each month.</div></div>
       </div>
 
     </div>
@@ -601,15 +745,15 @@ button,input{font-family:var(--sans)}
   <div class="section-wrap">
     <div class="nl-inner reveal">
       <span class="nl-ornament">&#10070;</span>
-      <div class="nl-kicker">Monthly Newsletter</div>
-      <h2 class="nl-title">The <em>Home Letter</em></h2>
+      <div class="nl-kicker">Monthly Letter</div>
+      <h2 class="nl-title">The <em>Atelier Letter</em></h2>
       <div class="nl-divider"></div>
-      <p class="nl-sub">Monthly interior design insights and renovation ROI analysis. No filler, no sponsored content - just the thinking behind decisions that improve your home and your returns.</p>
+      <p class="nl-sub">Each month, the thinking behind grand interiors - materials worth the investment, statement rooms in detail, and a closer look at the houses we love. Considered writing for those who decorate to last.</p>
       <form class="nl-form" id="nl-form" onsubmit="handleNlSubmit(event)">
         <input type="email" placeholder="your@email.com" required aria-label="Email address">
         <button type="submit">Subscribe</button>
       </form>
-      <div class="nl-fine" id="nl-fine">No spam. Unsubscribe at any time. Always free.</div>
+      <div class="nl-fine" id="nl-fine">No noise. Unsubscribe at any time. Always free.</div>
     </div>
   </div>
 </section>
@@ -617,73 +761,70 @@ button,input{font-family:var(--sans)}
 <!-- FOOTER -->
 <!--SHELL:FOOTER-->
 <footer class="footer">
-  <hr class="footer-mid-line">
   <div class="footer-upper">
 
-    <!-- Brand column -->
     <div>
-      <div class="footer-brand">Dalmend Home</div>
-      <div class="footer-brand-sub">Home Design &amp; Real Estate</div>
-      <p class="footer-desc">Interior design and home staging advice with a real estate investor's perspective. Design decisions that look beautiful and earn their keep.</p>
+      <div class="footer-brand">
+        <div class="footer-brand-mark">DH</div>
+        <div class="footer-brand-name">Dalmend Home</div>
+      </div>
+      <div class="footer-brand-sub">Luxury Interiors for Fine Houses</div>
+      <p class="footer-desc">The residential interiors studio of the <a href="https://dalmend.com">Dalmend Collective</a> - decorating high-end houses and mansions with restraint, rare materials and a sense of occasion.</p>
       <div class="footer-author-chip">
         <div class="footer-author-initials">OG</div>
         <div>
           <div class="footer-author-name">Olivia Grant</div>
-          <div class="footer-author-role">Interior Designer and Property Investor</div>
+          <div class="footer-author-role">Founding Designer</div>
         </div>
       </div>
     </div>
 
-    <!-- Topics column -->
     <div>
       <div class="footer-col footer-col-links">
-        <div class="footer-col-title">Topics</div>
-        <a href="#pillars">Interior Design</a>
-        <a href="#staging">Home Staging</a>
-        <a href="#articles">Renovation ROI</a>
-        <a href="#pillars">Color Theory</a>
-        <a href="#pillars">Property Value</a>
-        <a href="#pillars">Curb Appeal</a>
+        <div class="footer-col-title">Explore</div>
+        <a href="./#story">The Studio</a>
+        <a href="./#services">Services</a>
+        <a href="./#topics">What We Cover</a>
+        <a href="./#guides">Guides</a>
+        <a href="./#articles">Journal</a>
+        <a href="./#faq">Questions</a>
       </div>
     </div>
 
-    <!-- Site column -->
     <div>
       <div class="footer-col footer-col-links">
-        <div class="footer-col-title">Site</div>
+        <div class="footer-col-title">Studio</div>
         <a href="./">Home</a>
-        <a href="#guides">Guides</a>
-        <a href="#articles">Articles</a>
-        <a href="#about">About Olivia</a>
-        <a href="#newsletter">Newsletter</a>
+        <a href="about.html">About</a>
+        <a href="./#author">The Designer</a>
+        <a href="https://dalmend.com">Dalmend Collective</a>
         <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
       </div>
     </div>
 
-    <!-- Newsletter mini-form column -->
     <div>
-      <div class="footer-col-title">Get the Newsletter</div>
+      <div class="footer-col-title">The Atelier Letter</div>
       <div class="footer-nl-mini">
-        <p>Monthly design insights and renovation ROI analysis - straight to your inbox.</p>
+        <p>Considered writing on grand interiors, delivered monthly.</p>
         <form class="footer-nl-mini-form" onsubmit="handleFooterNl(event)">
           <input type="email" class="footer-nl-mini-input" placeholder="your@email.com" required id="footer-nl-email">
-          <button type="submit" class="footer-nl-mini-btn" id="footer-nl-btn">Subscribe to The Home Letter</button>
+          <button type="submit" class="footer-nl-mini-btn" id="footer-nl-btn">Subscribe</button>
         </form>
       </div>
     </div>
 
   </div>
 
-  <!-- Lower bar -->
   <div class="footer-lower">
     <div class="footer-lower-inner">
-      <span class="footer-lower-brand">Dalmend Home</span>
-      <span class="footer-lower-copy">&copy; 2026 Dalmend Home. All rights reserved. For informational purposes only.</span>
+      <span class="footer-lower-copy">&copy; 2026 Dalmend Home, part of the Dalmend Collective. All rights reserved.</span>
       <div class="footer-lower-links">
         <a href="./">Home</a>
-        <a href="#about">About</a>
+        <a href="about.html">About</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
+        <a href="https://dalmend.com">Dalmend Collective</a>
       </div>
     </div>
   </div>
@@ -701,9 +842,9 @@ button,input{font-family:var(--sans)}
 // ── ACTIVE NAV LINK ───────────────────────────────────────────────────────
 (function(){
   var links=document.querySelectorAll('.nav-links a');
-  var sections=['pillars','staging','articles','about'];
+  var sections=['story','services','topics','articles'];
   window.addEventListener('scroll',function(){
-    var y=window.pageYOffset+100;
+    var y=window.pageYOffset+120;
     var cur=-1;
     sections.forEach(function(id,i){
       var el=document.getElementById(id);
@@ -723,44 +864,123 @@ button,input{font-family:var(--sans)}
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 })();
 
-// ── NEWSLETTER FORM ───────────────────────────────────────────────────────
+// ── COUNT-UP STATS ────────────────────────────────────────────────────────
+(function(){
+  var done=false;
+  function run(){
+    if(done)return;done=true;
+    document.querySelectorAll('.stat-number[data-count]').forEach(function(el){
+      var target=parseInt(el.getAttribute('data-count'),10);
+      var suffix=el.getAttribute('data-suffix')||'';
+      var start=null,dur=1600;
+      function step(ts){
+        if(!start)start=ts;
+        var p=Math.min((ts-start)/dur,1);
+        var eased=1-Math.pow(1-p,3);
+        el.textContent=Math.round(target*eased)+suffix;
+        if(p<1)requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  var band=document.querySelector('.statsband');
+  if(band){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){run();io.disconnect();}});
+    },{threshold:0.3});
+    io.observe(band);
+  }
+})();
+
+// ── FAQ ACCORDION ─────────────────────────────────────────────────────────
+function toggleFaq(btn){
+  var item=btn.parentElement;
+  var ans=item.querySelector('.faq-a');
+  var open=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(it){
+    it.classList.remove('open');
+    it.querySelector('.faq-a').style.maxHeight=null;
+  });
+  if(!open){
+    item.classList.add('open');
+    ans.style.maxHeight=ans.scrollHeight+'px';
+  }
+}
+
+// ── NEWSLETTER FORMS ──────────────────────────────────────────────────────
 function handleNlSubmit(e){
   e.preventDefault();
   var form=document.getElementById('nl-form');
   var fine=document.getElementById('nl-fine');
-  form.outerHTML='<p style="font-family:var(--serif);font-size:20px;font-style:italic;color:var(--accent2);padding:12px 0">You\'re in. Welcome to The Home Letter.</p>';
+  form.outerHTML='<p style="font-family:\'Cormorant Garamond\',serif;font-size:22px;font-style:italic;color:#e3c987;padding:14px 0">You are on the list. Welcome to The Atelier Letter.</p>';
   if(fine)fine.style.display='none';
 }
-
 function handleFooterNl(e){
   e.preventDefault();
   var btn=document.getElementById('footer-nl-btn');
   var input=document.getElementById('footer-nl-email');
   if(btn&&input){
     input.value='';
-    input.placeholder='You\'re subscribed - thank you';
+    input.placeholder='Subscribed - thank you';
     input.disabled=true;
     btn.textContent='Subscribed';
-    btn.style.background='var(--primary2)';
     btn.disabled=true;
+    btn.style.filter='grayscale(.4)';
   }
 }
 
 // ── ARTICLES JSON LOADER ──────────────────────────────────────────────────
 async function loadArticles(){
+  if(!document.getElementById('articles-grid'))return;
+  var grid=document.getElementById('articles-grid');
   try{
     var r=await fetch('./articles.json');
     if(!r.ok)throw new Error('no articles');
     var posts=await r.json();
-    if(!posts||!posts.length)throw new Error('empty');
-    var grid=document.getElementById('articles-grid');
-    if(!grid)return;
+    if(!Array.isArray(posts))throw new Error('empty');
+    posts=posts.filter(function(p){return p&&p.slug&&p.title;});
+    if(!posts.length)throw new Error('empty');
+    var filterBar=document.getElementById('article-filters');
     var imgClasses=['article-img-a','article-img-b','article-img-c'];
-    var tags=['Interior Design','Renovation ROI','Home Staging','Color Theory','Property Value'];
-    grid.innerHTML=posts.slice(0,3).map(function(p,i){
-      return '<div class="article-card"><div class="article-img '+imgClasses[i%3]+'"></div><div class="article-body"><div class="article-tag">'+(p.category||tags[i%tags.length])+'</div><div class="article-title">'+p.title+'</div><p class="article-excerpt">'+(p.meta_description||'').slice(0,130)+'</p><div class="article-footer"><span class="article-meta">'+(p.author||'Olivia Grant')+'</span><a href="./'+p.slug+'/" class="article-link">Read Article</a></div></div></div>';
-    }).join('');
-  }catch(e){}
+    var fallbackTags=['Statement Rooms','Materials','Lighting','Grand Entrances','Curation'];
+
+    function cardHtml(p,i){
+      var cat=p.category||fallbackTags[i%fallbackTags.length];
+      return '<a class="article-card" href="./'+p.slug+'/" data-cat="'+cat+'">'+
+        '<div class="article-img '+imgClasses[i%3]+'"></div>'+
+        '<div class="article-body">'+
+        '<div class="article-tag">'+cat+'</div>'+
+        '<div class="article-title">'+p.title+'</div>'+
+        '<p class="article-excerpt">'+(p.meta_description||'').slice(0,150)+'</p>'+
+        '<div class="article-footer"><span class="article-meta">'+(p.author||'Olivia Grant')+'</span>'+
+        '<span class="article-link">Read Article</span></div>'+
+        '</div></a>';
+    }
+
+    function render(list){
+      grid.innerHTML=list.slice(0,6).map(cardHtml).join('');
+    }
+    render(posts);
+
+    // category filter
+    var cats=[];
+    posts.forEach(function(p){if(p.category&&cats.indexOf(p.category)<0)cats.push(p.category);});
+    if(filterBar&&cats.length>1){
+      var btns=['<button class="filter-btn active" data-f="all">All</button>']
+        .concat(cats.map(function(c){return '<button class="filter-btn" data-f="'+c+'">'+c+'</button>';}));
+      filterBar.innerHTML=btns.join('');
+      filterBar.addEventListener('click',function(e){
+        var b=e.target.closest('.filter-btn');
+        if(!b)return;
+        filterBar.querySelectorAll('.filter-btn').forEach(function(x){x.classList.remove('active');});
+        b.classList.add('active');
+        var f=b.getAttribute('data-f');
+        render(f==='all'?posts:posts.filter(function(p){return p.category===f;}));
+      });
+    }
+  }catch(e){
+    if(grid)grid.innerHTML='<p style="grid-column:1/-1;text-align:center;color:#9a8e7d;font-size:17px;padding:48px 20px">New articles from the studio are coming soon.</p>';
+  }
 }
 loadArticles();
 </script>
