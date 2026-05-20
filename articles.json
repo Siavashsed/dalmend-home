@@ -18,12 +18,13 @@
     "meta_description": "Interior designer and property investor Olivia Grant breaks down which renovations add real resale value and which ones just drain your budget.",
     "date": "May 15, 2026",
     "date_iso": "2026-05-15",
-    "author": "Siavash Sadighi",
+    "author": "Nina Webb",
     "image": "https://images.pexels.com/photos/31913354/pexels-photo-31913354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "outbound_links": [
       "remodeling.hw.net"
     ],
-    "category": "Statement Rooms"
+    "category": "Statement Rooms",
+    "_siavash_eligible": false
   },
   {
     "title": "Open Floor Plans: The Downsides Nobody Mentions",
