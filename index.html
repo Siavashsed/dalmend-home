@@ -67,6 +67,20 @@ button,input{font-family:var(--sans)}
 .nav-mobile a:hover{color:var(--accent);background:var(--surface)}
 .nav-mobile a:last-child{border-bottom:none}
 @media(max-width:860px){.nav-links,.nav-cta{display:none}.nav-burger{display:flex}}
+/* Article-page-only sticky: keep the sticky in white so the gold logo + brand
+   name read clearly against the light article body. Homepage (depth=0) keeps
+   the original near-black nav. body[data-page-depth] is set by layout_shell.wrap_page. */
+body[data-page-depth="1"] .nav{background:#fdfbf6;border-bottom:1px solid #ece3d2}
+body[data-page-depth="1"] .nav.scrolled{background:#ffffff;border-bottom:1px solid #e3d8c2;box-shadow:0 6px 22px rgba(58,42,18,.08)}
+body[data-page-depth="1"] .nav-name{color:#1a1612}
+body[data-page-depth="1"] .nav-name span{color:#9a7b3c}
+body[data-page-depth="1"] .nav-links a{color:#6f6356}
+body[data-page-depth="1"] .nav-links a:hover{color:#1a1612}
+body[data-page-depth="1"] .nav-dh{box-shadow:inset 0 0 0 1px rgba(40,30,18,.35),0 0 0 1px rgba(60,42,14,.10)}
+body[data-page-depth="1"] .nav-burger span{background:#1a1612}
+body[data-page-depth="1"] .nav-mobile{background:#fdfbf6;border-bottom:1px solid #ece3d2}
+body[data-page-depth="1"] .nav-mobile a{color:#3f3a32}
+body[data-page-depth="1"] .nav-mobile a:hover{color:#1a1612;background:#f7efe0}
 
 /* ── HERO ── */
 .hero{background:var(--bg);padding:96px 32px 104px;overflow:hidden;position:relative}
