@@ -9,7 +9,8 @@
     "image": "https://images.pexels.com/photos/19899060/pexels-photo-19899060.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "outbound_links": [
       "nar.realtor"
-    ]
+    ],
+    "category": "Estate Interiors"
   },
   {
     "title": "The Renovation Projects That Actually Add Resale Value (And the Ones That Don't)",
@@ -21,7 +22,8 @@
     "image": "https://images.pexels.com/photos/31913354/pexels-photo-31913354.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "outbound_links": [
       "remodeling.hw.net"
-    ]
+    ],
+    "category": "Statement Rooms"
   },
   {
     "title": "Open Floor Plans: The Downsides Nobody Mentions",
@@ -34,7 +36,8 @@
     "outbound_links": [
       "acousticalsociety.org",
       "nar.realtor"
-    ]
+    ],
+    "category": "Heritage Restoration"
   },
   {
     "title": "Paint Colors That Actually Photograph Well in Real Estate Listings",
@@ -48,6 +51,7 @@
       "zillow.com",
       "benjaminmoore.com",
       "sherwin-williams.com"
-    ]
+    ],
+    "category": "Statement Rooms"
   }
 ]
