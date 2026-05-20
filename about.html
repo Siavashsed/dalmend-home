@@ -49,7 +49,9 @@ button,input{font-family:var(--sans)}
 .nav-mark{display:flex;align-items:center;gap:13px;margin-right:auto;flex-shrink:0}
 /* Logo mark: gold disc with a thin dark inner ring + faint outer halo so it pops on any near-black bg. */
 .nav-dh{width:38px;height:38px;border-radius:50%;background:var(--gold-grad);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:15px;font-weight:600;color:#171411;letter-spacing:.5px;flex-shrink:0;box-shadow:inset 0 0 0 1px rgba(12,11,10,.55),0 0 0 1px rgba(227,201,135,.18)}
-.nav-name{font-family:var(--serif);font-size:21px;font-weight:500;color:var(--text);letter-spacing:.4px}
+.nav-brand{display:flex;flex-direction:column;line-height:1.15;gap:1px}
+.nav-name{font-family:var(--serif);font-size:16px;font-weight:500;color:var(--text);letter-spacing:.3px}
+.nav-tag{font-family:var(--sans, 'Inter', system-ui, sans-serif);font-size:10px;font-weight:400;color:var(--muted);letter-spacing:1.2px;text-transform:uppercase}
 /* Wordmark accent uses the lighter cream gold for stronger separation against deep black */
 .nav-name span{color:var(--accent2)}
 .nav-links{display:flex;height:100%;align-items:center}
@@ -66,14 +68,14 @@ button,input{font-family:var(--sans)}
 .nav-mobile.open{display:flex}
 .nav-mobile a{font-size:13px;font-weight:400;letter-spacing:1px;text-transform:uppercase;color:var(--text-dim);padding:17px 32px;border-bottom:1px solid var(--border);transition:color .2s,background .2s}
 .nav-mobile a:hover{color:var(--accent);background:var(--surface)}
-.nav-mobile a:last-child{border-bottom:none}
-@media(max-width:860px){.nav-links,.nav-cta{display:none}.nav-burger{display:flex}}
+.nav-mobile a:last-child{border-bottom:none}@media(max-width:860px){.nav-links,.nav-cta{display:none}.nav-burger{display:flex}}
 /* Article-page-only sticky: keep the sticky in white so the gold logo + brand
    name read clearly against the light article body. Homepage (depth=0) keeps
    the original near-black nav. body[data-page-depth] is set by layout_shell.wrap_page. */
 body[data-page-depth="1"] .nav{background:#fdfbf6;border-bottom:1px solid #ece3d2}
 body[data-page-depth="1"] .nav.scrolled{background:#ffffff;border-bottom:1px solid #e3d8c2;box-shadow:0 6px 22px rgba(58,42,18,.08)}
 body[data-page-depth="1"] .nav-name{color:#1a1612}
+body[data-page-depth="1"] .nav-tag{color:#8a7e6e}
 body[data-page-depth="1"] .nav-name span{color:#9a7b3c}
 body[data-page-depth="1"] .nav-links a{color:#6f6356}
 body[data-page-depth="1"] .nav-links a:hover{color:#1a1612}
@@ -351,30 +353,24 @@ body[data-page-depth="1"] .nav-mobile a:hover{color:#1a1612;background:#f7efe0}
 .feature-lede{font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.55;color:var(--primary2);font-weight:400;margin-bottom:22px;padding-left:18px;border-left:1px solid var(--accent)}
 .feature-copy{font-size:15px;color:var(--text-dim);line-height:1.9;font-weight:300;margin-bottom:30px}
 .feature-meta{display:flex;align-items:center;gap:14px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
-.feature-meta-dot{width:4px;height:4px;background:var(--accent);border-radius:50%}
-@media(max-width:900px){.feature-inner{grid-template-columns:1fr;gap:52px}.feature-band{padding:80px 0}}
+.feature-meta-dot{width:4px;height:4px;background:var(--accent);border-radius:50%}@media(max-width:900px){.feature-inner{grid-template-columns:1fr;gap:52px}.feature-band{padding:80px 0}}
 
 /* ── SCROLL REVEAL ── */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
-.reveal.visible{opacity:1;transform:none}
-
-/* ── RESPONSIVE ── */
-@media(max-width:1024px){
+.reveal.visible{opacity:1;transform:none}@media(max-width:1024px){
   .hero-inner{grid-template-columns:1fr;gap:52px}
   .hero-visual{display:none}
   .story-grid{grid-template-columns:1fr;gap:56px}
   .story-badge{position:static;margin-top:24px;max-width:none}
   .footer-upper{grid-template-columns:1fr 1fr;gap:44px}
   .author-card{grid-template-columns:150px 1fr;gap:44px;padding:48px 44px}
-}
-@media(max-width:900px){
+}@media(max-width:900px){
   .pillars-grid{grid-template-columns:repeat(2,1fr)}
   .topics-grid{grid-template-columns:repeat(2,1fr)}
   .guides-grid{grid-template-columns:1fr}
   .articles-grid{grid-template-columns:1fr}
   .statsband-inner{grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:768px){
+}@media(max-width:768px){
   .hero{padding:64px 22px 72px}
   .pillars-grid{grid-template-columns:1fr}
   .topics-grid{grid-template-columns:1fr}
@@ -387,8 +383,7 @@ body[data-page-depth="1"] .nav-mobile a:hover{color:#1a1612;background:#f7efe0}
   .section-wrap{padding:0 22px}
   .story-section,.pillars-section,.topics-section,.guides-section,.author-section,.articles-section,.faq-section,.nl-section,.statsband{padding:64px 0}
   .statsband-inner{padding:0 22px}
-}
-@media(max-width:480px){
+}@media(max-width:480px){
   .statsband-inner{grid-template-columns:1fr}
   .hero-actions{flex-direction:column;align-items:stretch}
   .hero-cta-primary,.hero-cta-ghost{text-align:center}
@@ -397,8 +392,7 @@ body[data-page-depth="1"] .nav-mobile a:hover{color:#1a1612;background:#f7efe0}
   .nl-form input:focus{border-color:var(--accent)}
   .nl-form button{border-radius:2px}
   .footer-lower-links{flex-wrap:wrap;gap:16px}
-}
-</style>
+}</style>
 </head>
 <body data-page-depth="0">
 <!-- NAV -->
@@ -406,7 +400,10 @@ body[data-page-depth="1"] .nav-mobile a:hover{color:#1a1612;background:#f7efe0}
   <div class="nav-inner">
     <a href="./" class="nav-mark">
       <div class="nav-dh">DH</div>
-      <span class="nav-name">Dalmend <span>Home</span></span>
+      <span class="nav-brand">
+        <span class="nav-name">interiors.dalmend.com</span>
+        <span class="nav-tag">Home Design &amp; Real Estate</span>
+      </span>
     </a>
     <div class="nav-links">
       <a href="./#story" class="active">The Studio</a>
@@ -474,10 +471,7 @@ body[data-page-depth="1"] .nav-mobile a:hover{color:#1a1612;background:#f7efe0}
 .ab-cta{text-align:center}
 .ab-cta .ab-p{margin-left:auto;margin-right:auto}
 .ab-cta-btn{display:inline-block;margin-top:26px;font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#171411;background:var(--ab-gold);padding:16px 38px;border-radius:3px;transition:transform .2s}
-.ab-cta-btn:hover{transform:translateY(-2px)}
-
-@media(max-width:780px){.ab-story-grid{grid-template-columns:1fr;gap:32px}.ab-pillars{grid-template-columns:1fr}.ab-author{grid-template-columns:1fr;padding:40px 30px;gap:30px;justify-items:center;text-align:center}.ab-tags{justify-content:center}}
-</style>
+.ab-cta-btn:hover{transform:translateY(-2px)}@media(max-width:780px){.ab-story-grid{grid-template-columns:1fr;gap:32px}.ab-pillars{grid-template-columns:1fr}.ab-author{grid-template-columns:1fr;padding:40px 30px;gap:30px;justify-items:center;text-align:center}.ab-tags{justify-content:center}}</style>
 <main class="ab-main">
   <section class="ab-hero">
     <div class="ab-wrap">
