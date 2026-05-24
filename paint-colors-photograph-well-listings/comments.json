@@ -7,7 +7,7 @@
     "date_iso": "2026-05-20",
     "date_display": "May 20, 2026",
     "text": "Great article! I just repainted my guest bedroom in Benjamin Moore's 'Cloud White' and the photos for my listing look so much brighter. The neutral tones really do make a difference when buyers are scrolling through online.",
-    "likes": 8
+    "likes": 0
   },
   {
     "id": "c2810",
@@ -17,36 +17,6 @@
     "date_iso": "2026-05-24",
     "date_display": "May 24, 2026",
     "text": "Question: what about accent walls? I'm thinking of doing a deep blue feature wall in my living room but now I'm worried it'll look too dark in photos. Should I skip the accent entirely?",
-    "likes": 5
-  },
-  {
-    "id": "c3263",
-    "name": "Robert L.",
-    "initials": "RL",
-    "color": "#ef4444",
-    "date_iso": "2026-05-27",
-    "date_display": "May 27, 2026",
-    "text": "I disagree with avoiding warm whites. We painted our kitchen in a soft cream and it photographs beautifully, especially with natural morning light. It's all about your lighting situation.",
-    "likes": 11
-  },
-  {
-    "id": "c4611",
-    "name": "Sarah M.",
-    "initials": "SM",
-    "color": "#f97316",
-    "date_iso": "2026-05-31",
-    "date_display": "May 31, 2026",
-    "text": "This is exactly what I needed! Tried a sage green in my bedroom last year and every photo came out looking muddy. Switching to a lighter palette next month.",
-    "likes": 9
-  },
-  {
-    "id": "c5519",
-    "name": "David C.",
-    "initials": "DC",
-    "color": "#a78bfa",
-    "date_iso": "2026-06-03",
-    "date_display": "Jun 3, 2026",
-    "text": "Has anyone tried the Sherwin Williams colors mentioned here? I'm about to list my condo and want to touch up a few walls before staging.",
-    "likes": 3
+    "likes": 2
   }
 ]
