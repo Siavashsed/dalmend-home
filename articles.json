@@ -54,5 +54,63 @@
       "sherwin-williams.com"
     ],
     "category": "Statement Rooms"
+  },
+  {
+    "title": "The NAR Settlement Changed Real Estate in 2024. Here's What It Actually Means for You",
+    "slug": "nar-settlement-2024-real-estate",
+    "meta_description": "The 2024 NAR settlement rewrote how buyer agents get paid. Here's what it means for home buyers, sellers, and investors right now.",
+    "date": "October 04, 2024",
+    "date_iso": "2024-10-04",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/8815851/pexels-photo-8815851.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nar.realtor",
+      "consumerfinance.gov",
+      "justice.gov",
+      "federalreserve.gov"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Zillow's 3D Home Tours Arrived in 2019 and Changed What Buyers Expect From Listings",
+    "slug": "zillow-3d-home-tours-2019",
+    "meta_description": "Zillow's 3D Home tool launched in early 2019 and reset buyer expectations overnight. Here's what it meant for sellers, agents, and designers.",
+    "date": "January 23, 2019",
+    "date_iso": "2019-01-23",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/7168055/pexels-photo-7168055.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "zillow.com",
+      "nar.realtor"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The NAR Settlement Hit in 2024 and Nothing in Real Estate Has Been the Same Since",
+    "slug": "nar-settlement-2024-real-estate-impact",
+    "meta_description": "Olivia Grant breaks down the 2024 NAR settlement, what it actually changed for buyers, sellers, and designers staging homes to sell.",
+    "date": "July 28, 2024",
+    "date_iso": "2024-07-28",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/8482875/pexels-photo-8482875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nar.realtor",
+      "axios.com",
+      "consumerreports.org",
+      "urban.org"
+    ],
+    "posted_iso": "2026-05-28",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
