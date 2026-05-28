@@ -67,8 +67,7 @@ button,input{font-family:var(--sans)}
 .nav-mobile.open{display:flex}
 .nav-mobile a{font-size:13px;font-weight:400;letter-spacing:1px;text-transform:uppercase;color:var(--text-dim);padding:17px 32px;border-bottom:1px solid var(--border);transition:color .2s,background .2s}
 .nav-mobile a:hover{color:var(--accent);background:var(--surface)}
-.nav-mobile a:last-child{border-bottom:none}
-@media(max-width:860px){.nav-links,.nav-cta{display:none}.nav-burger{display:flex}}
+.nav-mobile a:last-child{border-bottom:none}@media(max-width:860px){.nav-links,.nav-cta{display:none}.nav-burger{display:flex}}
 /* Article-page-only sticky: keep the sticky in white so the gold logo + brand
    name read clearly against the light article body. Homepage (depth=0) keeps
    the original near-black nav. body[data-page-depth] is set by layout_shell.wrap_page. */
@@ -353,30 +352,24 @@ body[data-page-depth="1"] .nav-mobile a:hover{color:#1a1612;background:#f7efe0}
 .feature-lede{font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.55;color:var(--primary2);font-weight:400;margin-bottom:22px;padding-left:18px;border-left:1px solid var(--accent)}
 .feature-copy{font-size:15px;color:var(--text-dim);line-height:1.9;font-weight:300;margin-bottom:30px}
 .feature-meta{display:flex;align-items:center;gap:14px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
-.feature-meta-dot{width:4px;height:4px;background:var(--accent);border-radius:50%}
-@media(max-width:900px){.feature-inner{grid-template-columns:1fr;gap:52px}.feature-band{padding:80px 0}}
+.feature-meta-dot{width:4px;height:4px;background:var(--accent);border-radius:50%}@media(max-width:900px){.feature-inner{grid-template-columns:1fr;gap:52px}.feature-band{padding:80px 0}}
 
 /* ── SCROLL REVEAL ── */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
-.reveal.visible{opacity:1;transform:none}
-
-/* ── RESPONSIVE ── */
-@media(max-width:1024px){
+.reveal.visible{opacity:1;transform:none}@media(max-width:1024px){
   .hero-inner{grid-template-columns:1fr;gap:52px}
   .hero-visual{display:none}
   .story-grid{grid-template-columns:1fr;gap:56px}
   .story-badge{position:static;margin-top:24px;max-width:none}
   .footer-upper{grid-template-columns:1fr 1fr;gap:44px}
   .author-card{grid-template-columns:150px 1fr;gap:44px;padding:48px 44px}
-}
-@media(max-width:900px){
+}@media(max-width:900px){
   .pillars-grid{grid-template-columns:repeat(2,1fr)}
   .topics-grid{grid-template-columns:repeat(2,1fr)}
   .guides-grid{grid-template-columns:1fr}
   .articles-grid{grid-template-columns:1fr}
   .statsband-inner{grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:768px){
+}@media(max-width:768px){
   .hero{padding:64px 22px 72px}
   .pillars-grid{grid-template-columns:1fr}
   .topics-grid{grid-template-columns:1fr}
@@ -389,8 +382,7 @@ body[data-page-depth="1"] .nav-mobile a:hover{color:#1a1612;background:#f7efe0}
   .section-wrap{padding:0 22px}
   .story-section,.pillars-section,.topics-section,.guides-section,.author-section,.articles-section,.faq-section,.nl-section,.statsband{padding:64px 0}
   .statsband-inner{padding:0 22px}
-}
-@media(max-width:480px){
+}@media(max-width:480px){
   .statsband-inner{grid-template-columns:1fr}
   .hero-actions{flex-direction:column;align-items:stretch}
   .hero-cta-primary,.hero-cta-ghost{text-align:center}
@@ -567,7 +559,7 @@ body[data-page-depth="1"] article .intro a{color:#c9a55c !important;text-decorat
         <div class="pillar-num">01</div>
         <div class="pillar-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
           </svg>
         </div>
         <div class="pillar-title">Whole-Home Design</div>
