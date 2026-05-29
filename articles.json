@@ -109,5 +109,47 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "The Week's Top 7: Most Notable Home Design and Real Estate Innovations Right Now (May 29, 2026)",
+    "slug": "top-7-home-design-innovations-may-2026",
+    "meta_description": "Olivia Grant ranks the 7 most notable home design and real estate innovations trending this week, with honest takes on who each is really for.",
+    "date": "May 29, 2026",
+    "date_iso": "2026-05-29",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/6444269/pexels-photo-6444269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "mogu.bio",
+      "rejuvenation.com",
+      "veevhomes.com",
+      "lick.com",
+      "atlasconcorde.com",
+      "lutron.com",
+      "opendoor.com"
+    ],
+    "posted_iso": "2026-05-29",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The NAR Settlement of 2024 Reshaped Real Estate Commissions and Here's What It Actually Did",
+    "slug": "nar-settlement-2024-real-estate-commissions",
+    "meta_description": "The 2024 NAR settlement changed how buyer agent commissions work. Here's what it meant for sellers, buyers, and designers staging to sell.",
+    "date": "May 02, 2024",
+    "date_iso": "2024-05-02",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/36729675/pexels-photo-36729675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nar.realtor",
+      "redfin.com",
+      "which.co.uk"
+    ],
+    "posted_iso": "2026-05-29",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
