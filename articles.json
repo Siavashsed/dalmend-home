@@ -72,7 +72,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Materials and Light"
   },
   {
     "title": "Zillow's 3D Home Tours Arrived in 2019 and Changed What Buyers Expect From Listings",
@@ -89,7 +90,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Art and Collecting"
   },
   {
     "title": "The NAR Settlement Hit in 2024 and Nothing in Real Estate Has Been the Same Since",
@@ -108,7 +110,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Statement Rooms"
   },
   {
     "title": "The Week's Top 7: Most Notable Home Design and Real Estate Innovations Right Now (May 29, 2026)",
@@ -150,6 +153,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Materials and Light"
   }
 ]
