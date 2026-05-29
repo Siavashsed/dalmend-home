@@ -421,9 +421,6 @@ body[data-page-depth="1"] article .intro a{color:#c9a55c !important;text-decorat
 </style>
 </head>
 <body>
-<!--SHELL:ACCENT:#c9a55c-->
-<!--SHELL:HEADER-->
-
 <!-- NAV -->
 <nav class="nav" id="main-nav">
   <div class="nav-inner">
@@ -439,7 +436,7 @@ body[data-page-depth="1"] article .intro a{color:#c9a55c !important;text-decorat
       <a href="./#services">Services</a>
       <a href="./#topics">What We Cover</a>
       <a href="./#articles">Journal</a>
-      <a href="about.html">About</a>
+      <a href="about">About</a>
     </div>
     <a href="./#newsletter" class="nav-cta">The Atelier Letter</a>
     <button class="nav-burger" onclick="document.getElementById('nav-mobile').classList.toggle('open')" aria-label="Open menu">
@@ -451,12 +448,10 @@ body[data-page-depth="1"] article .intro a{color:#c9a55c !important;text-decorat
     <a href="./#services" onclick="document.getElementById('nav-mobile').classList.remove('open')">Services</a>
     <a href="./#topics" onclick="document.getElementById('nav-mobile').classList.remove('open')">What We Cover</a>
     <a href="./#articles" onclick="document.getElementById('nav-mobile').classList.remove('open')">Journal</a>
-    <a href="about.html" onclick="document.getElementById('nav-mobile').classList.remove('open')">About</a>
+    <a href="about" onclick="document.getElementById('nav-mobile').classList.remove('open')">About</a>
     <a href="./#newsletter" onclick="document.getElementById('nav-mobile').classList.remove('open')">The Atelier Letter</a>
   </div>
 </nav>
-<!--/SHELL:HEADER-->
-
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
@@ -897,8 +892,7 @@ body[data-page-depth="1"] article .intro a{color:#c9a55c !important;text-decorat
 <!-- FOOTER -->
 
 <!-- VIEW_ALL_ARTICLES_LINK -->
-<div class="view-all" style="text-align:center;padding:28px 24px 40px;font-family:inherit"><a href="./articles.html" style="display:inline-block;color:currentColor;border:1px solid currentColor;padding:10px 22px;border-radius:999px;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;opacity:.85;transition:opacity .15s" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='.85'">View all articles -&gt;</a></div>
-<!--SHELL:FOOTER-->
+<div style="text-align:center;padding:32px 24px 48px"><a href="./articles" style="display:inline-block;color:currentColor;border:1px solid currentColor;padding:11px 26px;border-radius:999px;text-decoration:none;font-size:12.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;opacity:.85" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=.85">All Articles</a></div>
 <footer class="footer">
   <div class="footer-upper">
 
@@ -934,11 +928,11 @@ body[data-page-depth="1"] article .intro a{color:#c9a55c !important;text-decorat
       <div class="footer-col footer-col-links">
         <div class="footer-col-title">Studio</div>
         <a href="./">Home</a>
-        <a href="about.html">About</a>
+        <a href="about">About</a>
         <a href="./#author">The Designer</a>
         <a href="https://dalmend.com">Dalmend Collective</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
+        <a href="privacy">Privacy Policy</a>
+        <a href="terms">Terms of Use</a>
       </div>
     </div>
 
@@ -960,9 +954,9 @@ body[data-page-depth="1"] article .intro a{color:#c9a55c !important;text-decorat
       <span class="footer-lower-copy">&copy; 2026 Dalmend Home, part of the Dalmend Collective. All rights reserved.</span>
       <div class="footer-lower-links">
         <a href="./">Home</a>
-        <a href="about.html">About</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
+        <a href="about">About</a>
+        <a href="privacy">Privacy</a>
+        <a href="terms">Terms</a>
         <a href="https://dalmend.com">Dalmend Collective</a>
       </div>
     </div>
@@ -1125,6 +1119,5 @@ async function loadArticles(){
 }
 loadArticles();
 </script>
-<!--/SHELL:FOOTER-->
 </body>
 </html>
