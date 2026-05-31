@@ -155,5 +155,41 @@
       "en"
     ],
     "category": "Materials and Light"
+  },
+  {
+    "title": "How to Declutter a Home Before Selling Without Regrets (A Designer's Honest Guide)",
+    "slug": "declutter-home-before-selling-no-regrets",
+    "meta_description": "Interior designer and property investor Olivia Grant shares how to declutter before selling without regret, remorse, or leaving money on the table.",
+    "date": "May 31, 2026",
+    "date_iso": "2026-05-31",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/35430100/pexels-photo-35430100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "nar.realtor",
+      "tandfonline.com"
+    ],
+    "posted_iso": "2026-05-31",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "The NAR Settlement of 2024 Rewired How I Think About Every Property Deal",
+    "slug": "nar-settlement-2024-property-design-impact",
+    "meta_description": "The 2024 NAR settlement reshaped real estate commissions and buyer agreements. Here's what it actually changed for buyers, sellers, and designers.",
+    "date": "April 06, 2024",
+    "date_iso": "2024-04-06",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/7937211/pexels-photo-7937211.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "reuters.com",
+      "nar.realtor",
+      "zillow.com"
+    ],
+    "posted_iso": "2026-05-31",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
