@@ -171,7 +171,8 @@
     "posted_iso": "2026-05-31",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Statement Rooms"
   },
   {
     "title": "The NAR Settlement of 2024 Rewired How I Think About Every Property Deal",
@@ -190,6 +191,7 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Materials and Light"
   }
 ]
