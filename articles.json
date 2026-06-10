@@ -230,5 +230,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Zillow's 3D Home Tool Hit 2019 and Nothing Sold the Same Way Again",
+    "slug": "zillow-3d-home-2019-real-estate",
+    "meta_description": "Zillow's 3D Home app launched in 2019 and rewired how buyers shop and sellers list. Here's what it actually meant for the market.",
+    "date": "December 21, 2019",
+    "date_iso": "2019-12-21",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/36763190/pexels-photo-36763190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "zillow.com",
+      "nar.realtor"
+    ],
+    "posted_iso": "2026-06-10",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
