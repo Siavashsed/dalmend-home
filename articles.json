@@ -259,5 +259,23 @@
       "en"
     ],
     "category": "Art and Collecting"
+  },
+  {
+    "title": "Zillow 3D Home Went Free in 2020 and Nobody Talks About It Enough",
+    "slug": "zillow-3d-home-free-2020",
+    "meta_description": "Zillow made its 3D Home tour tool free in April 2020. Here's what that actually meant for buyers, sellers, and designers in real time.",
+    "date": "November 11, 2020",
+    "date_iso": "2020-11-11",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/12700443/pexels-photo-12700443.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "zillow.com",
+      "nar.realtor"
+    ],
+    "posted_iso": "2026-07-01",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
