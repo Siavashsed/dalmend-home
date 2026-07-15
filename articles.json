@@ -316,5 +316,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Bathroom Should Feel Like the Quietest Room in the House",
+    "slug": "bathroom-private-retreat-design",
+    "meta_description": "How to design a bathroom that feels like a private retreat, from a decor editor: lighting, tactile materials, layout tricks, and the finishing layer.",
+    "date": "July 15, 2026",
+    "date_iso": "2026-07-15",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/6444967/pexels-photo-6444967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "news.utexas.edu",
+      "houzz.com"
+    ],
+    "posted_iso": "2026-07-15",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
