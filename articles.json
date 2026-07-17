@@ -350,5 +350,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Window Treatments Are Why the Room Feels Unfinished",
+    "slug": "window-treatments-room-feel-finished",
+    "meta_description": "A stylist's rules for window treatments that make a room feel finished: rod height, panel length, fabric weight, and where curtains don't belong.",
+    "date": "July 17, 2026",
+    "date_iso": "2026-07-17",
+    "author": "Ines Carvalho",
+    "image": "https://images.pexels.com/photos/545034/pexels-photo-545034.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "energy.gov",
+      "sleepfoundation.org"
+    ],
+    "posted_iso": "2026-07-17",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
