@@ -1,21 +1,5 @@
 [
   {
-    "title": "Case Study: Kavalsia x Dalmend, and the Discipline of Selling a Candle Without Raising Your Voice",
-    "slug": "kavalsia-dalmend-partnership-case-study",
-    "meta_description": "A design editor's case study of the Kavalsia x Dalmend partnership: the brief, the approach and the build behind acquisition for a dark, gold candle house.",
-    "date": "November 10, 2026",
-    "date_iso": "2026-11-10",
-    "author": "Solène Arceneaux",
-    "image": "https://images.pexels.com/photos/8564607/pexels-photo-8564607.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "image_alt": "A hand lighting candles against a dark background, warm gold light.",
-    "photographer": "Nothing Ahead",
-    "category": "Home Design & Real Estate",
-    "posted_iso": "2026-11-10T22:52:06",
-    "available_languages": [
-      "en"
-    ]
-  },
-  {
     "title": "Cordless Lamps Beat the Smart Home in This Week's Top 7",
     "slug": "top-7-innovations-july-19-2026",
     "meta_description": "This week's top 7 home products ranked by a working stylist: cordless lamps, zellige, repairable sofas, plus what to skip. July 19, 2026.",
@@ -230,6 +214,22 @@
     ],
     "category": "Statement Rooms",
     "_siavash_eligible": false
+  },
+  {
+    "title": "Case Study: Kavalsia x Dalmend, and the Discipline of Selling a Candle Without Raising Your Voice",
+    "slug": "kavalsia-dalmend-partnership-case-study",
+    "meta_description": "A design editor's case study of the Kavalsia x Dalmend partnership: the brief, the approach and the build behind acquisition for a dark, gold candle house.",
+    "date": "June 17, 2025",
+    "date_iso": "2025-06-17",
+    "author": "Solène Arceneaux",
+    "image": "https://images.pexels.com/photos/28260282/pexels-photo-28260282.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "image_alt": "Black and gold candles in faceted holders beside their dark gift boxes.",
+    "photographer": "Sueda Gln",
+    "category": "Home Design & Real Estate",
+    "posted_iso": "2026-11-10T23:10:44",
+    "available_languages": [
+      "en"
+    ]
   },
   {
     "title": "The NAR Settlement Changed Real Estate in 2024. Here's What It Actually Means for You",
