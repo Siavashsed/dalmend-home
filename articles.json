@@ -32,7 +32,8 @@
     "posted_iso": "2026-07-17",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Statement Rooms"
   },
   {
     "title": "Negative Space Is the Most Expensive Thing in Your Room",
@@ -49,7 +50,8 @@
     "posted_iso": "2026-07-16",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Statement Rooms"
   },
   {
     "title": "Your Bathroom Should Feel Like the Quietest Room in the House",
@@ -66,7 +68,8 @@
     "posted_iso": "2026-07-15",
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Materials and Light"
   },
   {
     "title": "The 7 Home Objects I Can't Stop Recommending This Week",
@@ -221,7 +224,7 @@
     "meta_description": "A design editor's case study of the Kavalsia x Dalmend partnership: the brief, the approach and the build behind acquisition for a dark, gold candle house.",
     "date": "June 17, 2025",
     "date_iso": "2025-06-17",
-    "author": "Solène Arceneaux",
+    "author": "Sol\u00e8ne Arceneaux",
     "image": "https://images.pexels.com/photos/28260282/pexels-photo-28260282.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     "image_alt": "Black and gold candles in faceted holders beside their dark gift boxes.",
     "photographer": "Sueda Gln",
@@ -327,7 +330,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Statement Rooms"
   },
   {
     "title": "Zillow 3D Home Went Free in 2020 and Nobody Talks About It Enough",
@@ -345,7 +349,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Statement Rooms"
   },
   {
     "title": "Pantone Crowned Classic Blue for 2020. Your Rooms Disagree.",
@@ -364,7 +369,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Art and Collecting"
   },
   {
     "title": "Zillow's 3D Home Tool Hit 2019 and Nothing Sold the Same Way Again",
@@ -382,7 +388,8 @@
     "historical": true,
     "available_languages": [
       "en"
-    ]
+    ],
+    "category": "Statement Rooms"
   },
   {
     "title": "Zillow's 3D Home Tours Arrived in 2019 and Changed What Buyers Expect From Listings",
