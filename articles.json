@@ -408,5 +408,44 @@
       "en"
     ],
     "category": "Art and Collecting"
+  },
+  {
+    "title": "A $6,000 Induction Range Beats the Art TV in This Week's Top 7",
+    "slug": "top-7-home-products-november-15-2026",
+    "meta_description": "This week's top 7 trending home products for November 2026, ranked by a decor editor: what stands out about each and who should actually buy it.",
+    "date": "November 15, 2026",
+    "date_iso": "2026-11-15",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/3773573/pexels-photo-3773573.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "mdpi.com",
+      "epa.gov",
+      "irs.gov",
+      "energystar.gov"
+    ],
+    "posted_iso": "2026-11-15",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Living Coral Is 2019's Color, and Most Rooms Can't Carry It",
+    "slug": "pantone-living-coral-2019-rooms",
+    "meta_description": "Pantone's 2019 Color of the Year, Living Coral, works beautifully in small doses. A decor editor on where it lives well in a home and where it fails.",
+    "date": "October 20, 2019",
+    "date_iso": "2019-10-20",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/34909557/pexels-photo-34909557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pantone.com",
+      "houzz.com",
+      "nar.realtor"
+    ],
+    "posted_iso": "2026-11-15",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
