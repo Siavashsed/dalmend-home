@@ -447,5 +447,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Rooms Feel Flat Because Everything in Them Is Too Perfect",
+    "slug": "natural-materials-craft-in-decor",
+    "meta_description": "A decor editor on why natural materials and craft in decor make a home feel alive, what ages well, what fails, and where to spend first.",
+    "date": "November 16, 2026",
+    "date_iso": "2026-11-16",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/9736509/pexels-photo-9736509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "epa.gov",
+      "terrapinbrightgreen.com",
+      "craftscouncil.org.uk"
+    ],
+    "posted_iso": "2026-11-16",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
