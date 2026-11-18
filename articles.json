@@ -483,5 +483,23 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Slow Living Is a Lighting Problem Before It's a Decor Problem",
+    "slug": "slow-living-calmer-home-lighting-first",
+    "meta_description": "Slow living and a calmer home start with light, clutter and touch, not beige furniture. A decor editor on what actually quiets a room.",
+    "date": "November 18, 2026",
+    "date_iso": "2026-11-18",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/1631918/pexels-photo-1631918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "journals.sagepub.com",
+      "jneurosci.org",
+      "health.harvard.edu"
+    ],
+    "posted_iso": "2026-11-18",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
