@@ -518,5 +518,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Room Smells Like Something, So Choose It On Purpose",
+    "slug": "scent-atmosphere-room-design",
+    "meta_description": "Scent and atmosphere decide how a room feels before you see it. A stylist explains how to build a smell from materials, not candles.",
+    "date": "November 20, 2026",
+    "date_iso": "2026-11-20",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/12273851/pexels-photo-12273851.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "epa.gov",
+      "science.org"
+    ],
+    "posted_iso": "2026-11-20",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
