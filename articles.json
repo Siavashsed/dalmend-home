@@ -535,5 +535,24 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Cordless Lamps Lead This Week's Top 7 Home Buys",
+    "slug": "top-7-home-products-november-21-2026",
+    "meta_description": "My ranked top 7 trending home products for November 21, 2026, from cordless lamps to limewash, with who each one suits and who should skip it.",
+    "date": "November 21, 2026",
+    "date_iso": "2026-11-21",
+    "author": "Liesel Wolff",
+    "image": "https://images.pexels.com/photos/7018403/pexels-photo-7018403.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "energy.gov",
+      "epa.gov",
+      "freddiemac.com"
+    ],
+    "posted_iso": "2026-11-21",
+    "category": "Top Finds",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
