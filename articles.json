@@ -554,5 +554,39 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Mixing Heritage and Modern Decor Fails When Everything Gets a Vote",
+    "slug": "mixing-heritage-and-modern-decor",
+    "meta_description": "How to mix heritage and modern decor so a room feels collected, not staged. A stylist's rules on ratio, texture, scale and light.",
+    "date": "November 22, 2026",
+    "date_iso": "2026-11-22",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/6827340/pexels-photo-6827340.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "epa.gov"
+    ],
+    "posted_iso": "2026-11-22",
+    "available_languages": [
+      "en"
+    ]
+  },
+  {
+    "title": "Mortgage Rates Fell Below 3 Percent in 2020 and Rooms Changed Overnight",
+    "slug": "mortgage-rates-below-3-percent-2020-homes",
+    "meta_description": "Mortgage rates dropped under 3 percent in 2020. Here's how cheap money and a pandemic rewired what buyers wanted from a home, room by room.",
+    "date": "March 06, 2020",
+    "date_iso": "2020-03-06",
+    "author": "Ines Carvalho",
+    "image": "https://images.pexels.com/photos/4078616/pexels-photo-4078616.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "freddiemac.com",
+      "nar.realtor"
+    ],
+    "posted_iso": "2026-11-22",
+    "historical": true,
+    "available_languages": [
+      "en"
+    ]
   }
 ]
