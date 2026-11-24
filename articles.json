@@ -605,5 +605,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Your Bookshelf Needs Empty Space More Than Another Vase",
+    "slug": "bookshelf-styling-collected-not-cluttered",
+    "meta_description": "Styling a bookshelf that looks collected, not cluttered: the ratios, groupings and restraint I use in real homes, plus one mistake to skip.",
+    "date": "November 24, 2026",
+    "date_iso": "2026-11-24",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/37359479/pexels-photo-37359479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "jneurosci.org",
+      "journals.sagepub.com"
+    ],
+    "posted_iso": "2026-11-24",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
