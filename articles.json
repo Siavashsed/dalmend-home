@@ -622,5 +622,22 @@
     "available_languages": [
       "en"
     ]
+  },
+  {
+    "title": "Leave a Third of Your Bookshelf Empty, Seriously",
+    "slug": "style-bookshelf-like-an-editor",
+    "meta_description": "Style a bookshelf like an editor: edit hard, vary your stacks, and leave a third of the shelf empty. Practical rules from a working decor stylist.",
+    "date": "November 25, 2026",
+    "date_iso": "2026-11-25",
+    "author": "Olivia Grant",
+    "image": "https://images.pexels.com/photos/768125/pexels-photo-768125.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "outbound_links": [
+      "pewresearch.org",
+      "jneurosci.org"
+    ],
+    "posted_iso": "2026-11-25",
+    "available_languages": [
+      "en"
+    ]
   }
 ]
